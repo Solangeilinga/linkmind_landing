@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary:       #77021D;
+    --primary-light: #9E1530;
+    --primary-dark:  #550114;
+    --secondary:     #F5B731;
+    --accent:        #E07B2A;
+    --bg:            #FAF7F5;
+    --surface:       #FFFFFF;
+    --surface-var:   #F5EFED;
+    --ink:           #1C1010;
+    --ink-soft:      #8A7070;
+    --divider:       #EDE5E3;
+    --mood-green:    #5BAD72;
+    --mood-blue:     #5B8FC4;
+    --mood-purple:   #8B7EC8;
+    --mood-teal:     #5BA8A8;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #FAF7F5;
+    color: #1C1010;
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+/* ── Animations ─────────────────────────────────────────────── */
+@keyframes float1  { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,40px)} }
+@keyframes float2  { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-30px)} }
+@keyframes float3  { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-20px,20px)} }
+@keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes floatBadge  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes bounceSoft  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes pulseDot    { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.7)} }
+@keyframes typingDot   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+@keyframes lineReveal  { to { transform:scaleX(1); } }
+@keyframes fadeUp      { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeLeft    { from{opacity:0;transform:translateX(40px)} to{opacity:1;transform:translateX(0)} }
+@keyframes bubbleIn    { from{opacity:0;transform:scale(.95) translateY(8px)} to{opacity:1;transform:scale(1) translateY(0)} }
+@keyframes shimmer     { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+
+.animate-float1      { animation: float1      12s ease-in-out infinite; }
+.animate-float2      { animation: float2      15s ease-in-out infinite; }
+.animate-float3      { animation: float3      10s ease-in-out infinite; }
+.animate-marquee     { animation: marquee     30s linear infinite; }
+.animate-floatBadge  { animation: floatBadge  4s ease-in-out infinite; }
+.animate-floatBadge2 { animation: floatBadge  4s ease-in-out 2s infinite; }
+.animate-bounceSoft  { animation: bounceSoft  2s ease-in-out infinite; }
+.animate-pulseDot    { animation: pulseDot    2s infinite; }
+.animate-typingDot   { animation: typingDot   1.2s ease-in-out infinite; }
+.animate-fadeUp      { animation: fadeUp      .9s ease forwards; }
+.animate-fadeLeft    { animation: fadeLeft    .9s ease forwards; }
+.animate-bubbleIn    { animation: bubbleIn    .4s ease; }
+
+.delay-200  { animation-delay: .2s; }
+.delay-350  { animation-delay: .35s; }
+.delay-500  { animation-delay: .5s; }
+.delay-650  { animation-delay: .65s; }
+.delay-800  { animation-delay: .8s; }
+
+.line-reveal {
+  position: relative;
+  display: inline-block;
+}
+.line-reveal::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #F5B731, #E07B2A);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: lineReveal 1s 1.2s forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

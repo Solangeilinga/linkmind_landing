@@ -1,0 +1,87 @@
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+
+const P = "#77021D";
+
+const links = [
+  { label: "Fonctionnalités", href: "#features"      },
+  { label: "Communauté",      href: "#community"     },
+  { label: "Professionnels",  href: "#professionals" },
+  { label: "Mindo IA",        href: "#mindo"         },
+];
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen]         = useState(false);
+
+  useEffect(() => {
+    const h = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", h);
+    return () => window.removeEventListener("scroll", h);
+  }, []);
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-3 flex items-center justify-between transition-all duration-300"
+      style={scrolled ? { background: "rgba(250,247,245,.95)", backdropFilter: "blur(16px)", boxShadow: "0 1px 0 rgba(28,16,16,.06)" } : {}}>
+
+      {/* Logo */}
+      <a href="/" className="flex items-center gap-2.5 no-underline">
+        <Image src="/logo.png" alt="LinkMind" width={36} height={36} style={{ borderRadius: 8, objectFit: "contain" }} />
+        <span style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 800, fontSize: "1.2rem", color: P, letterSpacing: "-.01em" }}>
+          LinkMind
+        </span>
+      </a>
+
+      {/* Desktop links */}
+      <ul className="hidden md:flex items-center gap-7 list-none">
+        {links.map(l => (
+          <li key={l.href}>
+            <a href={l.href} className="text-sm font-semibold no-underline transition-colors duration-200"
+              style={{ color: "#8A7070" }}
+              onMouseEnter={e => (e.currentTarget.style.color = P)}
+              onMouseLeave={e => (e.currentTarget.style.color = "#8A7070")}>
+              {l.label}
+            </a>
+          </li>
+        ))}
+        <li>
+          <a href="#download" className="text-sm font-bold no-underline px-5 py-2.5 rounded-full transition-all duration-200"
+            style={{ background: P, color: "white", boxShadow: "0 4px 14px rgba(119,2,29,.3)" }}
+            onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-1px)"; }}
+            onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background=P; el.style.transform="none"; }}>
+            Télécharger
+          </a>
+        </li>
+      </ul>
+
+      {/* Hamburger */}
+      <button className="md:hidden flex flex-col gap-[5px] p-1 bg-transparent border-none cursor-pointer"
+        onClick={() => setOpen(!open)}>
+        {[
+          open ? "rotate(45deg) translate(0,7px)" : "none",
+          "none",
+          open ? "rotate(-45deg) translate(0,-7px)" : "none",
+        ].map((t, i) => (
+          <span key={i} className="block w-[22px] h-[2px] rounded transition-all duration-300"
+            style={{ background: P, transform: t, opacity: i === 1 && open ? 0 : 1 }} />
+        ))}
+      </button>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="md:hidden absolute top-full left-0 right-0 px-6 py-5 flex flex-col gap-4"
+          style={{ background: "rgba(250,247,245,.97)", backdropFilter: "blur(16px)", borderTop: "1px solid #EDE5E3" }}>
+          {links.map(l => (
+            <a key={l.href} href={l.href} className="text-sm font-semibold no-underline"
+              style={{ color: "#8A7070" }} onClick={() => setOpen(false)}>{l.label}</a>
+          ))}
+          <a href="#download" className="text-sm font-bold no-underline px-5 py-3 rounded-full text-center"
+            style={{ background: P, color: "white" }} onClick={() => setOpen(false)}>
+            Télécharger
+          </a>
+        </div>
+      )}
+    </nav>
+  );
+}
