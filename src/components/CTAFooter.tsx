@@ -32,7 +32,7 @@ export function CTABanner() {
         </p>
 
         <div className="reveal" style={{ ...(visible?{opacity:1,transform:"none"}:{}), transitionDelay:".3s" }}>
-          <a href="#" className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
+          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
             style={{ background:"#FAF7F5", color:P, padding:"14px 30px", borderRadius:100, fontSize:"0.95rem", boxShadow:"0 6px 20px rgba(0,0,0,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform="translateY(-2px)"; el.style.boxShadow="0 10px 30px rgba(0,0,0,.4)"; }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform="none"; el.style.boxShadow="0 6px 20px rgba(0,0,0,.3)"; }}>

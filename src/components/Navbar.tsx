@@ -46,7 +46,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <a href="#download" className="text-sm font-bold no-underline px-5 py-2.5 rounded-full transition-all duration-200"
+          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="text-sm font-bold no-underline px-5 py-2.5 rounded-full transition-all duration-200"
             style={{ background: P, color: "white", boxShadow: "0 4px 14px rgba(119,2,29,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-1px)"; }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background=P; el.style.transform="none"; }}>
@@ -76,7 +76,7 @@ export default function Navbar() {
             <a key={l.href} href={l.href} className="text-sm font-semibold no-underline"
               style={{ color: "#8A7070" }} onClick={() => setOpen(false)}>{l.label}</a>
           ))}
-          <a href="#download" className="text-sm font-bold no-underline px-5 py-3 rounded-full text-center"
+          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="text-sm font-bold no-underline px-5 py-3 rounded-full text-center"
             style={{ background: P, color: "white" }} onClick={() => setOpen(false)}>
             Télécharger
           </a>

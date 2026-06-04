@@ -47,7 +47,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="#download" className="block text-center no-underline transition-colors duration-200"
+            <a href="#https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="block text-center no-underline transition-colors duration-200"
               style={{ padding: "12px", borderRadius: 100, border: "1.5px solid rgba(26,22,37,.15)", color: "#1a1625", fontSize: "0.9rem", fontWeight: 500 }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#ede9e4"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; }}>
@@ -70,7 +70,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="#download" className="block text-center no-underline transition-all duration-200"
+            <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="block text-center no-underline transition-all duration-200"
               style={{ padding: "12px", borderRadius: 100, background: "#9b8ec4", color: "white", fontSize: "0.9rem", fontWeight: 500, boxShadow: "0 4px 20px rgba(155,142,196,.4)" }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#8a7db4"; (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#9b8ec4"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}>
