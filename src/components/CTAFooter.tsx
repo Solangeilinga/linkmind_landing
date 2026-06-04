@@ -36,7 +36,7 @@ export function CTABanner() {
             style={{ background:"#FAF7F5", color:P, padding:"14px 30px", borderRadius:100, fontSize:"0.95rem", boxShadow:"0 6px 20px rgba(0,0,0,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform="translateY(-2px)"; el.style.boxShadow="0 10px 30px rgba(0,0,0,.4)"; }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform="none"; el.style.boxShadow="0 6px 20px rgba(0,0,0,.3)"; }}>
-            📱 Télécharger LinkMind — C&apos;est gratuit
+            📱 Télécharger LinkMind
           </a>
         </div>
 
