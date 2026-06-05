@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="animate-fadeUp delay-650 flex items-center gap-3 sm:gap-4 flex-wrap" style={{ opacity: 0 }}>
-            <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1VH4nOnXCjO4bZLO89LWBiSy1AKxyYdTm/view?usp=sharing"
               className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
               style={{ background: P, color: "white", padding: "13px 22px", borderRadius: 100, fontSize: "clamp(0.85rem,1.5vw,0.95rem)", boxShadow: "0 6px 20px rgba(119,2,29,.35)" }}
               onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-2px)"; el.style.boxShadow="0 10px 30px rgba(119,2,29,.45)"; }}

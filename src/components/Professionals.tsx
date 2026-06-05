@@ -83,7 +83,7 @@ export default function Professionals() {
 
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "#1C1010" }}>{pro.price}<span style={{ fontSize: 10, color: "#8A7070", fontWeight: 500 }}> / séance</span></div>
-                  <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing"
+                  <a href="https://drive.google.com/file/d/1VH4nOnXCjO4bZLO89LWBiSy1AKxyYdTm/view?usp=sharing"
                     className="no-underline font-bold transition-all duration-200"
                     style={{ fontSize: 12, padding: "7px 14px", borderRadius: 100, background: pro.available ? P : "#EDE5E3", color: pro.available ? "white" : "#8A7070", cursor: pro.available ? "pointer" : "default" }}>
                     {pro.available ? "Réserver" : "Indisponible"}

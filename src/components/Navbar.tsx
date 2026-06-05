@@ -54,7 +54,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1VH4nOnXCjO4bZLO89LWBiSy1AKxyYdTm/view?usp=sharing"
               className="text-sm font-bold no-underline px-5 py-2.5 rounded-full transition-all duration-200"
               style={{ background: P, color: "white", boxShadow: "0 4px 14px rgba(119,2,29,.3)" }}
               onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-1px)"; }}
@@ -86,7 +86,7 @@ export default function Navbar() {
             <a key={l.href} href={l.href} className="text-sm font-semibold no-underline py-1"
               style={{ color: "#8A7070" }} onClick={() => setOpen(false)}>{l.label}</a>
           ))}
-          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1VH4nOnXCjO4bZLO89LWBiSy1AKxyYdTm/view?usp=sharing"
             className="text-sm font-bold no-underline px-5 py-3.5 rounded-full text-center mt-1"
             style={{ background: P, color: "white" }} onClick={() => setOpen(false)}>
             Télécharger
