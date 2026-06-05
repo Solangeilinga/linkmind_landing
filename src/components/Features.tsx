@@ -10,7 +10,7 @@ const features = [
   { icon: "👨‍⚕️", title: "Mise en relation avec des pros",
     desc: "Trouve et réserve une consultation avec un psychologue, coach ou médecin partenaire. Directement depuis l'app, en quelques secondes.",
     tag: "Prise de RDV simplifiée · Présentiel & en ligne", large: false, dark: true, bg: "", tagColor: "rgba(250,247,245,.6)" },
-  { icon: "✨", title: "Mindo — ton IA bienveillante",
+  { icon: "✨", title: "Mindo — ton assistant bienveillante",
     desc: "Un assistant entraîné pour écouter sans juger et t'accompagner 24h/24.",
     tag: "10 messages/jour gratuits · Mémoire contextuelle", large: false, dark: false, bg: "rgba(224,123,42,.08)", tagColor: A },
   { icon: "🌙", title: "Suivi d'humeur quotidien",

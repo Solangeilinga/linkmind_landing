@@ -9,6 +9,31 @@ const posts = [
   { emoji: "😰", text: "Je me sens tellement décalé(e) par rapport aux autres. Vous aussi vous avez ce sentiment parfois ?", likes: 61, reactions: "💙 🤝 😢", time: "Il y a 45 min" },
 ];
 
+function PostCard({ p, i }: { p: typeof posts[0]; i: number }) {
+  const { ref, visible } = useReveal();
+  return (
+    <div ref={ref}
+      style={{ background: "white", borderRadius: "1.25rem", padding: "1.25rem 1.5rem", opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(20px)", transition: `opacity .6s ease ${i*100}ms, transform .6s ease ${i*100}ms`, boxShadow: "0 2px 12px rgba(119,2,29,.06)" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+        <div style={{ width: 36, height: 36, borderRadius: "50%", background: "rgba(119,2,29,.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem", flexShrink: 0 }}>
+          {p.emoji}
+        </div>
+        <div>
+          <div style={{ fontSize: 11, fontWeight: 700, color: P }}>🔒 Anonyme</div>
+          <div style={{ fontSize: 10, color: "#8A7070" }}>{p.time}</div>
+        </div>
+      </div>
+      <p style={{ fontSize: "clamp(0.82rem,2vw,0.88rem)", color: "#1C1010", lineHeight: 1.65, fontWeight: 500, margin: "0 0 12px" }}>
+        {p.text}
+      </p>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <span style={{ fontSize: 14, letterSpacing: 2 }}>{p.reactions}</span>
+        <span style={{ fontSize: 11, color: "#8A7070", fontWeight: 600 }}>💙 {p.likes} soutiens</span>
+      </div>
+    </div>
+  );
+}
+
 export default function Community() {
   const { ref, visible } = useReveal();
   return (
@@ -17,30 +42,7 @@ export default function Community() {
 
         {/* Posts preview */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          {posts.map((p, i) => {
-            const { ref: r, visible: v } = useReveal();
-            return (
-              <div key={i} ref={r}
-                style={{ background: "white", borderRadius: "1.25rem", padding: "1.25rem 1.5rem", opacity: v ? 1 : 0, transform: v ? "translateY(0)" : "translateY(20px)", transition: `opacity .6s ease ${i*100}ms, transform .6s ease ${i*100}ms`, boxShadow: "0 2px 12px rgba(119,2,29,.06)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                  <div style={{ width: 36, height: 36, borderRadius: "50%", background: "rgba(119,2,29,.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem", flexShrink: 0 }}>
-                    {p.emoji}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: P }}>🔒 Anonyme</div>
-                    <div style={{ fontSize: 10, color: "#8A7070" }}>{p.time}</div>
-                  </div>
-                </div>
-                <p style={{ fontSize: "clamp(0.82rem,2vw,0.88rem)", color: "#1C1010", lineHeight: 1.65, fontWeight: 500, margin: "0 0 12px" }}>
-                  {p.text}
-                </p>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  <span style={{ fontSize: 14, letterSpacing: 2 }}>{p.reactions}</span>
-                  <span style={{ fontSize: 11, color: "#8A7070", fontWeight: 600 }}>💙 {p.likes} soutiens</span>
-                </div>
-              </div>
-            );
-          })}
+          {posts.map((p, i) => <PostCard key={i} p={p} i={i} />)}
         </div>
 
         {/* Text */}
