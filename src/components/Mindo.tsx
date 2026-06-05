@@ -57,7 +57,7 @@ export default function Mindo() {
 
         {/* Text */}
         <div ref={textRef} className="reveal order-first-mobile" style={tv ? { opacity:1, transform:"none" } : {}}>
-          <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Mindo, ton IA bienveillante</span>
+          <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Mindo, ton assistant bienveillante</span>
           <h2 style={{ fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
             Parler aide.<br />
             <span style={{ color: P }}>Mindo est là pour ça.</span>

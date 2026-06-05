@@ -11,7 +11,7 @@ const features = [
     desc: "Trouve et réserve une consultation avec un psychologue, coach ou médecin partenaire. Directement depuis l'app, en quelques secondes.",
     tag: "Prise de RDV simplifiée · Présentiel & en ligne", large: false, dark: true, bg: "", tagColor: "rgba(250,247,245,.6)" },
   { icon: "✨", title: "Mindo — ton IA bienveillante",
-    desc: "Un assistant entraîné pour écouter sans juger et t'accompagner 24h/24. Pas de réponse générique — Mindo se souvient de toi.",
+    desc: "Un assistant entraîné pour écouter sans juger et t'accompagner 24h/24.",
     tag: "10 messages/jour gratuits · Mémoire contextuelle", large: false, dark: false, bg: "rgba(224,123,42,.08)", tagColor: A },
   { icon: "🌙", title: "Suivi d'humeur quotidien",
     desc: "10 secondes par jour pour noter comment tu te sens. Visualise tes patterns, reçois des insights, et comprends mieux tes émotions semaine après semaine.",

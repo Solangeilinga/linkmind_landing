@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Sub */}
           <p className="animate-fadeUp delay-500"
             style={{ opacity: 0, fontSize: "clamp(0.95rem,2vw,1.1rem)", fontWeight: 500, color: "#8A7070", maxWidth: 520, lineHeight: 1.7, marginBottom: "2rem" }}>
-            Suis ton humeur, partage avec une communauté anonyme bienveillante, consulte un professionnel, et parle à <strong style={{ color: "#1C1010" }}>Mindo</strong> — ton assistant IA disponible 24h/24.
+            Suis ton humeur, partage avec une communauté anonyme bienveillante, consulte un professionnel, et parle à <strong style={{ color: "#1C1010" }}>Mindo</strong>, ton assistant disponible 24h/24.
           </p>
 
           {/* CTAs */}

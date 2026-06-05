@@ -52,7 +52,7 @@ export function Footer() {
       { name: "Fonctionnalités", href: "#features" },
       { name: "Communauté",      href: "#community" },
       { name: "Professionnels",  href: "#professionals" },
-      { name: "Mindo IA",        href: "#mindo" },
+      { name: "Mindo",        href: "#mindo" },
     ]},
     { group: "Ressources", links: [
       { name: "Aide", href: "/help" },
