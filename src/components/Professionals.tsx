@@ -4,9 +4,9 @@ import { useReveal } from "./useReveal";
 const P = "#77021D"; const S = "#F5B731"; const A = "#E07B2A";
 
 const pros = [
-  { initials: "KM", name: "Dr. Kofi Mensah",  type: "Psychologue",  city: "Abidjan · En ligne", price: "25 000 FCFA", rating: 4.9, count: 142, color: "#9E1530", available: true  },
-  { initials: "AS", name: "Amara Sow",         type: "Coach de vie", city: "Dakar · En ligne",   price: "15 000 FCFA", rating: 4.8, count: 98,  color: A,         available: true  },
-  { initials: "FD", name: "Dr. Fatou Diallo",  type: "Médecin",      city: "Lomé · Présentiel",  price: "20 000 FCFA", rating: 4.7, count: 76,  color: "#5BAD72", available: false },
+  { initials: "KM", name: "Dr. Kofi Mensah",  type: "Psychologue",  city: "Abidjan · En ligne", price: "X XXX FCFA", rating: 4.9, count: 142, color: "#9E1530", available: true  },
+  { initials: "AS", name: "Amara Sow",         type: "Coach de vie", city: "Dakar · En ligne",   price: "XX XXX FCFA", rating: 4.8, count: 98,  color: A,         available: true  },
+  { initials: "FD", name: "Dr. Fatou Diallo",  type: "Médecin",      city: "Lomé · Présentiel",  price: "XX XXX FCFA", rating: 4.7, count: 76,  color: "#5BAD72", available: false },
 ];
 
 const steps = [
