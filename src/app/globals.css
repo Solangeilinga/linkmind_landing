@@ -25,7 +25,9 @@
     background-color: #FAF7F5;
     color: #1C1010;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
   }
+  *, *::before, *::after { box-sizing: border-box; }
 }
 
 /* ── Animations ─────────────────────────────────────────────── */
@@ -41,7 +43,6 @@
 @keyframes fadeUp      { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 @keyframes fadeLeft    { from{opacity:0;transform:translateX(40px)} to{opacity:1;transform:translateX(0)} }
 @keyframes bubbleIn    { from{opacity:0;transform:scale(.95) translateY(8px)} to{opacity:1;transform:scale(1) translateY(0)} }
-@keyframes shimmer     { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
 
 .animate-float1      { animation: float1      12s ease-in-out infinite; }
 .animate-float2      { animation: float2      15s ease-in-out infinite; }
@@ -86,3 +87,130 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Responsive utilities ───────────────────────────────────── */
+/* Sections : padding vertical réduit sur mobile */
+.section-pad { padding: 7rem 1.5rem; }
+@media (max-width: 768px) { .section-pad { padding: 4rem 1.25rem; } }
+
+/* Grid 2 colonnes → 1 colonne sur mobile */
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .two-col-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+/* Ordre mobile : texte avant illustration */
+.order-first-mobile { order: 0; }
+.order-last-mobile  { order: 1; }
+@media (max-width: 1024px) {
+  .order-first-mobile { order: 0; }
+  .order-last-mobile  { order: 1; }
+  .reverse-mobile > *:first-child { order: 1; }
+  .reverse-mobile > *:last-child  { order: 0; }
+}
+
+/* Hero phone : visible dès md */
+.phone-hero {
+  display: none;
+}
+@media (min-width: 768px) {
+  .phone-hero { display: flex; justify-content: center; }
+}
+
+/* Badge hero phone : masqués sur très petit écran */
+@media (max-width: 400px) {
+  .badge-float { display: none !important; }
+}
+
+/* Reduce badge offset sur tablette */
+@media (max-width: 1100px) {
+  .badge-top-right { right: -10px !important; }
+  .badge-bottom-left { left: -10px !important; }
+}
+
+/* Features grid : bento adaptatif */
+@media (max-width: 768px) {
+  .features-bento > div { grid-column: span 1 !important; }
+}
+
+/* Stats hero : wrap proprement */
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .hero-stats { gap: 1.5rem; }
+  .hero-stats > div > div:first-child { font-size: 1.5rem !important; }
+}
+
+/* CTABanner texte : pas de br inutile sur mobile */
+@media (max-width: 600px) {
+  .cta-br { display: none; }
+}
+
+/* HowItWorks screen panel : visible dès md */
+.how-screen {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .how-screen { display: block; }
+}
+
+/* Footer grid responsive */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* Community posts + texte */
+.community-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .community-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+/* Pricing grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 720px;
+  margin: 3.5rem auto 0;
+}
+@media (max-width: 640px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+
+/* Trust badges Professionals */
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (max-width: 480px) {
+  .trust-badges { gap: 1rem; justify-content: flex-start; }
+}
+
+/* Navbar safe top padding for page content */
+main { padding-top: 0; }
+
+/* Overflow guard pour orbs */
+section { overflow-x: hidden; }

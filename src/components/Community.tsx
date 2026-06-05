@@ -1,7 +1,7 @@
 "use client";
 import { useReveal } from "./useReveal";
 
-const P = "#77021D"; const S = "#F5B731"; const A = "#E07B2A";
+const P = "#77021D";
 
 const posts = [
   { emoji: "😔", text: "Les partiels m'écrasent cette semaine. J'arrive plus à dormir avant 3h du mat...", likes: 34, reactions: "💙 💪 🤝", time: "Il y a 12 min" },
@@ -12,9 +12,8 @@ const posts = [
 export default function Community() {
   const { ref, visible } = useReveal();
   return (
-    <section id="community" style={{ background: "#F5EFED", padding: "7rem 1.5rem" }}>
-      <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}
-        className="grid-cols-1 lg:grid-cols-2">
+    <section id="community" className="section-pad" style={{ background: "#F5EFED" }}>
+      <div className="community-grid" style={{ maxWidth: 1160, margin: "0 auto" }}>
 
         {/* Posts preview */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -32,7 +31,7 @@ export default function Community() {
                     <div style={{ fontSize: 10, color: "#8A7070" }}>{p.time}</div>
                   </div>
                 </div>
-                <p style={{ fontSize: "0.88rem", color: "#1C1010", lineHeight: 1.65, fontWeight: 500, margin: "0 0 12px" }}>
+                <p style={{ fontSize: "clamp(0.82rem,2vw,0.88rem)", color: "#1C1010", lineHeight: 1.65, fontWeight: 500, margin: "0 0 12px" }}>
                   {p.text}
                 </p>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -47,11 +46,11 @@ export default function Community() {
         {/* Text */}
         <div ref={ref} className="reveal" style={visible ? { opacity: 1, transform: "none" } : {}}>
           <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Communauté anonyme</span>
-          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.8rem,3.5vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
+          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
             Tu n&apos;es pas seul(e).<br />
             <span style={{ color: P }}>Des milliers pensent comme toi.</span>
           </h2>
-          <p style={{ fontSize: "1rem", color: "#8A7070", fontWeight: 500, lineHeight: 1.75, marginBottom: "2rem" }}>
+          <p style={{ fontSize: "clamp(0.9rem,2vw,1rem)", color: "#8A7070", fontWeight: 500, lineHeight: 1.75, marginBottom: "2rem" }}>
             La communauté LinkMind te permet de partager ce que tu ressens, sans révéler ton identité. Lis les expériences des autres, réponds avec bienveillance, et réalise que beaucoup traversent les mêmes choses.
           </p>
 
@@ -73,7 +72,8 @@ export default function Community() {
             ))}
           </div>
 
-          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing" className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
+          <a href="https://drive.google.com/file/d/1oNnJfykm5tPfgp-o9fuA0v7tfkZHuP3E/view?usp=sharing"
+            className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
             style={{ background: P, color: "white", padding: "13px 24px", borderRadius: 100, fontSize: "0.9rem", boxShadow: "0 6px 20px rgba(119,2,29,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-2px)"; }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background=P; el.style.transform="none"; }}>

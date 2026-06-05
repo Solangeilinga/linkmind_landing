@@ -22,12 +22,13 @@ export default function Mindo() {
   const { ref: chatRef, visible: cv } = useReveal();
 
   return (
-    <section id="mindo" style={{ background: "#F5EFED", padding: "7rem 1.5rem" }}>
-      <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center" }}
-        className="grid-cols-1 lg:grid-cols-2">
+    <section id="mindo" className="section-pad" style={{ background: "#F5EFED" }}>
+      {/* reverse on mobile: text first, chat second */}
+      <div className="two-col-grid reverse-mobile" style={{ maxWidth: 1160, margin: "0 auto" }}>
 
         {/* Chat */}
-        <div ref={chatRef} className="reveal" style={{ background: "white", borderRadius: "1.75rem", padding: "1.5rem", boxShadow: "0 4px 24px rgba(119,2,29,.08)", ...(cv ? { opacity:1, transform:"none" } : {}) }}>
+        <div ref={chatRef} className="reveal order-last-mobile"
+          style={{ background: "white", borderRadius: "1.75rem", padding: "clamp(1rem,3vw,1.5rem)", boxShadow: "0 4px 24px rgba(119,2,29,.08)", ...(cv ? { opacity:1, transform:"none" } : {}) }}>
           {/* Header */}
           <div style={{ display: "flex", alignItems: "center", gap: 12, paddingBottom: "1rem", borderBottom: "1px solid #EDE5E3", marginBottom: "1rem" }}>
             <div style={{ width: 40, height: 40, borderRadius: "50%", background: `linear-gradient(135deg,${P},${A})`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem", flexShrink: 0 }}>✨</div>
@@ -42,7 +43,7 @@ export default function Mindo() {
             <div style={{ fontSize: "0.7rem", color: "#8A7070", textAlign: "center", marginBottom: 4 }}>Aujourd&apos;hui, 22:15</div>
             {msgs.map((m, i) => (
               <div key={i} className="animate-bubbleIn"
-                style={{ padding: "10px 14px", borderRadius: m.from === "mindo" ? "16px 16px 16px 4px" : "16px 16px 4px 16px", fontSize: "0.85rem", lineHeight: 1.65, maxWidth: "88%", background: m.from === "mindo" ? "#F5EFED" : P, color: m.from === "mindo" ? "#1C1010" : "white", fontWeight: m.from === "user" ? 600 : 500, alignSelf: m.from === "user" ? "flex-end" : "flex-start", animationDelay: `${i * 0.25}s` }}>
+                style={{ padding: "10px 14px", borderRadius: m.from === "mindo" ? "16px 16px 16px 4px" : "16px 16px 4px 16px", fontSize: "clamp(0.8rem,2vw,0.85rem)", lineHeight: 1.65, maxWidth: "88%", background: m.from === "mindo" ? "#F5EFED" : P, color: m.from === "mindo" ? "#1C1010" : "white", fontWeight: m.from === "user" ? 600 : 500, alignSelf: m.from === "user" ? "flex-end" : "flex-start", animationDelay: `${i * 0.25}s` }}>
                 {m.text}
               </div>
             ))}
@@ -55,13 +56,13 @@ export default function Mindo() {
         </div>
 
         {/* Text */}
-        <div ref={textRef} className="reveal" style={tv ? { opacity:1, transform:"none" } : {}}>
+        <div ref={textRef} className="reveal order-first-mobile" style={tv ? { opacity:1, transform:"none" } : {}}>
           <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Mindo, ton IA bienveillante</span>
-          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.8rem,3.5vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
+          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
             Parler aide.<br />
             <span style={{ color: P }}>Mindo est là pour ça.</span>
           </h2>
-          <p style={{ fontSize: "1rem", color: "#8A7070", fontWeight: 500, lineHeight: 1.75, marginBottom: "2rem" }}>
+          <p style={{ fontSize: "clamp(0.9rem,2vw,1rem)", color: "#8A7070", fontWeight: 500, lineHeight: 1.75, marginBottom: "2rem" }}>
             Mindo n&apos;est pas un chatbot générique. Il complète la communauté et les professionnels — disponible à toute heure, sans rendez-vous, sans jugement.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>

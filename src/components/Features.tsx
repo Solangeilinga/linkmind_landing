@@ -27,17 +27,26 @@ const features = [
 function FeatureCard({ f, delay }: { f: typeof features[0]; delay: number }) {
   const { ref, visible } = useReveal();
   return (
-    <div ref={ref} className={f.large ? "md:col-span-2" : ""}
-      style={{ background: f.dark ? "#1C1010" : f.bg || "#F5EFED", borderRadius: "1.75rem", padding: "2.2rem 2rem", opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(30px)", transition: `opacity .7s ease ${delay}ms, transform .7s ease ${delay}ms`, cursor: "default" }}
+    <div ref={ref}
+      className={f.large ? "md:col-span-2" : ""}
+      style={{
+        background: f.dark ? "#1C1010" : f.bg || "#F5EFED",
+        borderRadius: "1.75rem",
+        padding: "clamp(1.5rem,3vw,2.2rem) clamp(1.25rem,2.5vw,2rem)",
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(30px)",
+        transition: `opacity .7s ease ${delay}ms, transform .7s ease ${delay}ms`,
+        cursor: "default",
+      }}
       onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-5px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 40px rgba(119,2,29,.12)"; }}
       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "none"; }}>
-      <div style={{ width: 50, height: 50, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", marginBottom: "1.25rem", background: f.dark ? "rgba(250,247,245,.1)" : "rgba(119,2,29,.08)" }}>
+      <div style={{ width: 50, height: 50, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", marginBottom: "1.25rem", background: f.dark ? "rgba(250,247,245,.1)" : "rgba(119,2,29,.08)", flexShrink: 0 }}>
         {f.icon}
       </div>
-      <h3 style={{ fontWeight: 800, fontSize: "1.2rem", color: f.dark ? "#FAF7F5" : "#1C1010", marginBottom: "0.6rem" }}>
+      <h3 style={{ fontWeight: 800, fontSize: "clamp(1rem,2vw,1.2rem)", color: f.dark ? "#FAF7F5" : "#1C1010", marginBottom: "0.6rem" }}>
         {f.title}
       </h3>
-      <p style={{ fontSize: "0.9rem", color: f.dark ? "rgba(250,247,245,.6)" : "#8A7070", fontWeight: 500, lineHeight: 1.7, margin: 0 }}>
+      <p style={{ fontSize: "clamp(0.82rem,1.5vw,0.9rem)", color: f.dark ? "rgba(250,247,245,.6)" : "#8A7070", fontWeight: 500, lineHeight: 1.7, margin: 0 }}>
         {f.desc}
       </p>
       <span style={{ display: "inline-block", marginTop: "1rem", fontSize: "0.73rem", fontWeight: 700, background: f.dark ? "rgba(250,247,245,.1)" : "rgba(119,2,29,.08)", color: f.tagColor, padding: "4px 12px", borderRadius: 100 }}>
@@ -50,16 +59,17 @@ function FeatureCard({ f, delay }: { f: typeof features[0]; delay: number }) {
 export default function Features() {
   const { ref, visible } = useReveal();
   return (
-    <section id="features" style={{ background: "#FAF7F5", padding: "7rem 1.5rem" }}>
+    <section id="features" className="section-pad" style={{ background: "#FAF7F5" }}>
       <div style={{ maxWidth: 1160, margin: "0 auto" }}>
         <div ref={ref} className="reveal" style={visible ? { opacity: 1, transform: "none" } : {}}>
           <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Ce qu&apos;on t&apos;offre</span>
-          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.8rem,3.5vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "0.75rem", letterSpacing: "-.02em" }}>
+          <h2 style={{ fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "0.75rem", letterSpacing: "-.02em" }}>
             Tout ce dont ton mental a besoin,{" "}
             <span style={{ color: P }}>en un seul endroit</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4" style={{ marginTop: "3rem" }}>
+        {/* Bento grid : 3 cols desktop, 2 cols tablette, 1 col mobile */}
+        <div className="features-bento grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" style={{ marginTop: "3rem" }}>
           {features.map((f, i) => <FeatureCard key={f.title} f={f} delay={i * 80} />)}
         </div>
       </div>
