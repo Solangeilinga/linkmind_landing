@@ -74,7 +74,7 @@ export default function Community() {
             ))}
           </div>
 
-          <a href="https://drive.google.com/file/d/1VH4nOnXCjO4bZLO89LWBiSy1AKxyYdTm/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1FGjaATL7b6eUaELGDx1i1rSgO-DemsYO/view?usp=sharing"
             className="inline-flex items-center gap-2 no-underline font-bold transition-all duration-200"
             style={{ background: P, color: "white", padding: "13px 24px", borderRadius: 100, fontSize: "0.9rem", boxShadow: "0 6px 20px rgba(119,2,29,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background="#550114"; el.style.transform="translateY(-2px)"; }}
