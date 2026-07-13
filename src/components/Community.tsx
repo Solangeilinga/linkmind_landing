@@ -53,7 +53,7 @@ export default function Community() {
             <span style={{ color: P }}>Des milliers pensent comme toi.</span>
           </h2>
           <p style={{ fontSize: "clamp(0.9rem,2vw,1rem)", color: "#8A7070", fontWeight: 500, lineHeight: 1.75, marginBottom: "2rem" }}>
-            La communauté LinkMind te permet de partager ce que tu ressens, sans révéler ton identité. Lis les expériences des autres, réponds avec bienveillance, et réalise que beaucoup traversent les mêmes choses.
+            La communauté BASYAM te permet de partager ce que tu ressens, sans révéler ton identité. Lis les expériences d&apos;autres jeunes, réponds avec bienveillance, et réalise que tu n&apos;es pas seul(e).
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: "2rem" }}>

@@ -72,10 +72,10 @@ export default function PrivacyPage() {
 
         <h2>1. Qui sommes-nous ?</h2>
         <p>
-          LinkMind est une application mobile de bien-être mental éditée par l&apos;équipe LinkMind. La présente politique de confidentialité décrit comment nous collectons, utilisons, stockons et protégeons vos données personnelles lorsque vous utilisez notre application.
+          BASYAM est une application mobile de bien-être mental éditée par l&apos;équipe BASYAM. La présente politique de confidentialité décrit comment nous collectons, utilisons, stockons et protégeons vos données personnelles lorsque vous utilisez notre application.
         </p>
         <p>
-          Pour toute question relative à vos données personnelles, vous pouvez nous contacter à : <strong>contact@linkmind.app</strong>
+          Pour toute question relative à vos données personnelles, vous pouvez nous contacter à : <strong>contact@basyam.app</strong>
         </p>
 
         <h2>2. Quelles données collectons-nous ?</h2>
@@ -226,7 +226,7 @@ export default function PrivacyPage() {
         </div>
 
         <p>
-          Pour exercer ces droits, rendez-vous dans votre <strong>Profil &gt; Paramètres &gt; Mes données</strong> dans l&apos;application, ou contactez-nous à <strong>contact@linkmind.app</strong>.
+          Pour exercer ces droits, rendez-vous dans votre <strong>Profil &gt; Paramètres &gt; Mes données</strong> dans l&apos;application, ou contactez-nous à <strong>contact@basyam.app</strong>.
         </p>
 
         <h2>8. Sécurité des données</h2>
@@ -241,7 +241,7 @@ export default function PrivacyPage() {
 
         <h2>9. Cookies et technologies similaires</h2>
         <p>
-          L&apos;application mobile LinkMind utilise très peu de cookies. Nous utilisons uniquement :
+          L&apos;application mobile BASYAM utilise très peu de cookies. Nous utilisons uniquement :
         </p>
         <ul>
           <li><strong>Cookies essentiels</strong> : pour maintenir votre session de connexion</li>
@@ -254,18 +254,18 @@ export default function PrivacyPage() {
 
         <h2>10. Mineurs</h2>
         <p>
-          LinkMind est destiné aux personnes âgées d&apos;au moins 15 ans. Nous ne collectons pas sciemment les données d&apos;enfants de moins de 15 ans. Si nous apprenons qu&apos;un utilisateur a moins de 15 ans, nous supprimons immédiatement son compte et ses données.
+          BASYAM est destiné aux personnes âgées d&apos;au moins 15 ans. Nous ne collectons pas sciemment les données d&apos;enfants de moins de 15 ans. Si nous apprenons qu&apos;un utilisateur a moins de 15 ans, nous supprimons immédiatement son compte et ses données.
         </p>
 
         <h2>11. Modifications de cette politique</h2>
         <p>
-          Nous pouvons mettre à jour cette politique de confidentialité. Toute modification substantielle vous sera notifiée via l&apos;application (notification push ou email). La poursuite de l&apos;utilisation de LinkMind après notification vaut acceptation des nouvelles conditions.
+          Nous pouvons mettre à jour cette politique de confidentialité. Toute modification substantielle vous sera notifiée via l&apos;application (notification push ou email). La poursuite de l&apos;utilisation de BASYAM après notification vaut acceptation des nouvelles conditions.
         </p>
 
         <h2>12. Nous contacter</h2>
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4">
           <p className="font-semibold mb-2">Pour toute question relative à vos données personnelles :</p>
-          <p className="mb-1">📧 <a href="mailto:contact@linkmind.app" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">contact@linkmind.app</a></p>
+          <p className="mb-1">📧 <a href="mailto:contact@basyam.app" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">contact@basyam.app</a></p>
           <p className="text-sm text-[#8A7070]">📮 Ou via notre formulaire de contact dans l&apos;application</p>
         </div>
 

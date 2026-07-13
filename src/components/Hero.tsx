@@ -73,9 +73,9 @@ export default function Hero() {
           <div className="animate-fadeUp delay-800 hero-stats"
             style={{ opacity: 0, marginTop: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #EDE5E3" }}>
             {[
-              { num: "12k+",  label: "Jeunes actifs" },
-              { num: "4.8 ⭐", label: "Note moyenne" },
-              { num: "94%",   label: "Se sentent mieux" },
+              { num: "Phase pilote",  label: "Lancement" },
+              { num: "100%",  label: "Gratuit & confidentiel" },
+              { num: "24h/24", label: "Mindo disponible" },
             ].map(s => (
               <div key={s.num}>
                 <div style={{ fontWeight: 800, fontSize: "clamp(1.4rem,3vw,1.9rem)", color: P, letterSpacing: "-.03em", lineHeight: 1 }}>{s.num}</div>

@@ -5,7 +5,7 @@ const P = "#77021D"; const A = "#E07B2A";
 
 const msgs = [
   { from: "mindo", text: "Bonsoir 🌙 Comment s'est passée ta journée ? Je sens que tu avais quelque chose à me dire." },
-  { from: "user",  text: "Franchement dur. Les révisions + le boulot en parallèle, je suis épuisé(e)." },
+  { from: "user",  text: "Franchement dur. Le boulot + les responsabilités en parallèle, je suis épuisé(e)." },
   { from: "mindo", text: "C'est beaucoup à porter en même temps. Le surmenage crée souvent ce sentiment d'être coincé(e). Qu'est-ce qui te pèse le plus en ce moment ?" },
   { from: "user",  text: "L'impression que ça ne finira jamais..." },
 ];
@@ -57,7 +57,7 @@ export default function Mindo() {
 
         {/* Text */}
         <div ref={textRef} className="reveal order-first-mobile" style={tv ? { opacity:1, transform:"none" } : {}}>
-          <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Mindo, ton assistant bienveillante</span>
+          <span style={{ fontSize: "0.73rem", fontWeight: 700, color: P, textTransform: "uppercase", letterSpacing: "0.12em" }}>Mindo, ton assistant bienveillant</span>
           <h2 style={{ fontWeight: 800, fontSize: "clamp(1.6rem,4vw,2.8rem)", color: "#1C1010", marginTop: "0.7rem", marginBottom: "1rem", letterSpacing: "-.02em" }}>
             Parler aide.<br />
             <span style={{ color: P }}>Mindo est là pour ça.</span>

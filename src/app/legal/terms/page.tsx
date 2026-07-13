@@ -82,7 +82,7 @@ export default function TermsPage() {
 
         <h2>Préambule</h2>
         <p>
-          Les présentes Conditions Générales d&apos;Utilisation (ci-après &quot;CGU&quot;) régissent l&apos;accès et l&apos;utilisation de l&apos;application mobile LinkMind (ci-après &quot;l&apos;Application&quot;), développée et exploitée par l&apos;équipe LinkMind (ci-après &quot;Nous&quot; ou &quot;LinkMind&quot;).
+          Les présentes Conditions Générales d&apos;Utilisation (ci-après &quot;CGU&quot;) régissent l&apos;accès et l&apos;utilisation de l&apos;application mobile BASYAM (ci-après &quot;l&apos;Application&quot;), développée et exploitée par l&apos;équipe BASYAM (ci-après &quot;Nous&quot; ou &quot;BASYAM&quot;).
         </p>
         <p>
           En créant un compte et en utilisant l&apos;Application, vous reconnaissez avoir lu, compris et accepté sans réserve les présentes CGU. Si vous n&apos;acceptez pas ces conditions, vous ne devez pas utiliser l&apos;Application.
@@ -90,16 +90,16 @@ export default function TermsPage() {
 
         <h2>Article 1 — Objet</h2>
         <p>
-          LinkMind est une application mobile de bien-être mental destinée aux jeunes âgés de 15 ans et plus. Elle propose des outils de suivi d&apos;humeur, un assistant conversationnel basé sur l&apos;intelligence artificielle, des défis de bien-être, une communauté d&apos;entraide anonyme, et un accès à des professionnels de santé mentale partenaires.
+          BASYAM est une application mobile de bien-être mental destinée aux jeunes âgés de 15 ans et plus. Elle propose des outils de suivi d&apos;humeur, un assistant conversationnel basé sur l&apos;intelligence artificielle, des défis de bien-être, une communauté d&apos;entraide anonyme, et un accès à des professionnels de santé mentale partenaires.
         </p>
         <p className="bg-[#F5EFED] p-4 rounded-xl italic">
-          LinkMind est un outil de soutien au bien-être et ne constitue en aucun cas un service médical, un dispositif de diagnostic, ni un substitut à une consultation professionnelle.
+          BASYAM est un outil de soutien au bien-être et ne constitue en aucun cas un service médical, un dispositif de diagnostic, ni un substitut à une consultation professionnelle.
         </p>
 
         <h2>Article 2 — Conditions d&apos;accès</h2>
         <h3>2.1 Âge minimum</h3>
         <p>
-          L&apos;utilisation de LinkMind est réservée aux personnes âgées d&apos;au moins 15 ans. En créant un compte, vous certifiez avoir atteint cet âge. LinkMind se réserve le droit de suspendre tout compte dont l&apos;utilisateur s&apos;avèrerait être mineur en dessous de cet âge, sans préavis.
+          L&apos;utilisation de BASYAM est réservée aux personnes âgées d&apos;au moins 15 ans. En créant un compte, vous certifiez avoir atteint cet âge. BASYAM se réserve le droit de suspendre tout compte dont l&apos;utilisateur s&apos;avèrerait être mineur en dessous de cet âge, sans préavis.
         </p>
 
         <h3>2.2 Création de compte</h3>
@@ -109,7 +109,7 @@ export default function TermsPage() {
 
         <h3>2.3 Sécurité du compte</h3>
         <p>
-          Vous êtes seul responsable de la confidentialité de vos identifiants de connexion. Toute activité réalisée depuis votre compte est réputée effectuée par vous. En cas de suspicion de compromission, vous devez en informer immédiatement LinkMind.
+          Vous êtes seul responsable de la confidentialité de vos identifiants de connexion. Toute activité réalisée depuis votre compte est réputée effectuée par vous. En cas de suspicion de compromission, vous devez en informer immédiatement BASYAM.
         </p>
 
         <h3>2.4 Vérification de l&apos;identité</h3>
@@ -140,7 +140,7 @@ export default function TermsPage() {
 
         <h3>3.5 Accès aux professionnels</h3>
         <p>
-          LinkMind propose un annuaire de professionnels de santé mentale partenaires. La mise en relation avec ces professionnels est facilitée par l&apos;Application, mais LinkMind n&apos;est pas partie au contrat de prestation entre l&apos;utilisateur et le professionnel, et ne saurait être tenu responsable du contenu des consultations.
+          BASYAM propose un annuaire de professionnels de santé mentale partenaires. La mise en relation avec ces professionnels est facilitée par l&apos;Application, mais BASYAM n&apos;est pas partie au contrat de prestation entre l&apos;utilisateur et le professionnel, et ne saurait être tenu responsable du contenu des consultations.
         </p>
 
         <h3>3.6 Fonctionnalités Premium</h3>
@@ -168,26 +168,26 @@ export default function TermsPage() {
         <ul>
           <li>tenter de contourner les mécanismes d&apos;anonymat pour identifier d&apos;autres utilisateurs ;</li>
           <li>utiliser l&apos;Application à des fins de collecte de données sur d&apos;autres utilisateurs ;</li>
-          <li>usurper l&apos;identité d&apos;un autre utilisateur, d&apos;un professionnel ou d&apos;un membre de l&apos;équipe LinkMind ;</li>
+          <li>usurper l&apos;identité d&apos;un autre utilisateur, d&apos;un professionnel ou d&apos;un membre de l&apos;équipe BASYAM ;</li>
           <li>tenter d&apos;accéder de façon non autorisée aux systèmes informatiques de l&apos;Application.</li>
         </ul>
 
         <h3>4.3 Modération</h3>
         <p>
-          LinkMind se réserve le droit de supprimer tout contenu contrevenant aux présentes règles et de suspendre ou clôturer tout compte dont le comportement serait incompatible avec les valeurs de bienveillance et de respect qui fondent la communauté LinkMind, sans préavis ni indemnité.
+          BASYAM se réserve le droit de supprimer tout contenu contrevenant aux présentes règles et de suspendre ou clôturer tout compte dont le comportement serait incompatible avec les valeurs de bienveillance et de respect qui fondent la communauté BASYAM, sans préavis ni indemnité.
         </p>
 
         <h2>Article 5 — Avertissement médical et limites de l&apos;Application</h2>
         <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl my-4">
           <p className="text-red-700 font-semibold mb-1">⚠️ Attention</p>
           <p className="text-red-600 text-sm">
-            LinkMind n&apos;est PAS un service médical d&apos;urgence.
+            BASYAM n&apos;est PAS un service médical d&apos;urgence.
           </p>
         </div>
         
         <h3>5.1 Pas un service médical</h3>
         <p>
-          LinkMind est un outil de soutien au bien-être général. L&apos;Application, ses contenus, son assistant IA et les informations qu&apos;elle fournit ne constituent en aucun cas un diagnostic médical, un traitement psychiatrique, ni un avis psychologique professionnel.
+          BASYAM est un outil de soutien au bien-être général. L&apos;Application, ses contenus, son assistant IA et les informations qu&apos;elle fournit ne constituent en aucun cas un diagnostic médical, un traitement psychiatrique, ni un avis psychologique professionnel.
         </p>
 
         <h3>5.2 Situations d&apos;urgence</h3>
@@ -211,18 +211,18 @@ export default function TermsPage() {
 
         <h3>5.3 Consultation professionnelle</h3>
         <p>
-          LinkMind encourage fortement ses utilisateurs à consulter un professionnel de santé mentale qualifié pour toute préoccupation sérieuse concernant leur santé psychologique.
+          BASYAM encourage fortement ses utilisateurs à consulter un professionnel de santé mentale qualifié pour toute préoccupation sérieuse concernant leur santé psychologique.
         </p>
 
         <h2>Article 6 — Données personnelles et confidentialité</h2>
         <h3>6.1 Collecte des données</h3>
         <p>
-          LinkMind collecte les données nécessaires au fonctionnement de l&apos;Application, notamment les informations de compte (email, téléphone, âge, ville), les données d&apos;humeur, les interactions avec l&apos;assistant, et les contenus publiés dans la communauté.
+          BASYAM collecte les données nécessaires au fonctionnement de l&apos;Application, notamment les informations de compte (email, téléphone, âge, ville), les données d&apos;humeur, les interactions avec l&apos;assistant, et les contenus publiés dans la communauté.
         </p>
 
         <h3>6.2 Anonymat dans la communauté</h3>
         <p>
-          Les publications dans l&apos;espace communautaire sont associées à un pseudonyme anonyme et non à votre identité réelle. LinkMind s&apos;engage à ne pas divulguer votre identité réelle aux autres utilisateurs.
+          Les publications dans l&apos;espace communautaire sont associées à un pseudonyme anonyme et non à votre identité réelle. BASYAM s&apos;engage à ne pas divulguer votre identité réelle aux autres utilisateurs.
         </p>
 
         <h3>6.3 Droits des utilisateurs</h3>
@@ -237,26 +237,26 @@ export default function TermsPage() {
 
         <h3>6.5 Sécurité</h3>
         <p>
-          LinkMind met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, toute divulgation, modification ou destruction. Les mots de passe sont chiffrés et les communications sont sécurisées par protocole HTTPS.
+          BASYAM met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, toute divulgation, modification ou destruction. Les mots de passe sont chiffrés et les communications sont sécurisées par protocole HTTPS.
         </p>
 
         <h2>Article 7 — Propriété intellectuelle</h2>
         <p>
-          L&apos;ensemble des éléments constituant l&apos;Application — design, textes, illustrations, logos, code source, architecture et contenus générés par LinkMind — sont la propriété exclusive de LinkMind et sont protégés par les lois applicables en matière de propriété intellectuelle.
+          L&apos;ensemble des éléments constituant l&apos;Application — design, textes, illustrations, logos, code source, architecture et contenus générés par BASYAM — sont la propriété exclusive de BASYAM et sont protégés par les lois applicables en matière de propriété intellectuelle.
         </p>
         <p>
-          Toute reproduction, représentation, modification ou exploitation non autorisée de ces éléments est strictement interdite. Les contenus publiés par les utilisateurs dans la communauté restent leur propriété. En les publiant, l&apos;utilisateur accorde à LinkMind une licence non exclusive d&apos;utilisation à des fins de fonctionnement et d&apos;amélioration de l&apos;Application.
+          Toute reproduction, représentation, modification ou exploitation non autorisée de ces éléments est strictement interdite. Les contenus publiés par les utilisateurs dans la communauté restent leur propriété. En les publiant, l&apos;utilisateur accorde à BASYAM une licence non exclusive d&apos;utilisation à des fins de fonctionnement et d&apos;amélioration de l&apos;Application.
         </p>
 
         <h2>Article 8 — Disponibilité et modifications du service</h2>
         <h3>8.1 Disponibilité</h3>
         <p>
-          LinkMind s&apos;efforce d&apos;assurer la disponibilité permanente de l&apos;Application mais ne peut garantir une disponibilité sans interruption. Des maintenances, mises à jour ou incidents techniques peuvent temporairement rendre l&apos;Application inaccessible.
+          BASYAM s&apos;efforce d&apos;assurer la disponibilité permanente de l&apos;Application mais ne peut garantir une disponibilité sans interruption. Des maintenances, mises à jour ou incidents techniques peuvent temporairement rendre l&apos;Application inaccessible.
         </p>
 
         <h3>8.2 Évolution du service</h3>
         <p>
-          LinkMind se réserve le droit de modifier, suspendre ou interrompre tout ou partie des fonctionnalités de l&apos;Application à tout moment, avec ou sans préavis, notamment pour des raisons techniques, de sécurité ou commerciales.
+          BASYAM se réserve le droit de modifier, suspendre ou interrompre tout ou partie des fonctionnalités de l&apos;Application à tout moment, avec ou sans préavis, notamment pour des raisons techniques, de sécurité ou commerciales.
         </p>
 
         <h3>8.3 Modification des CGU</h3>
@@ -270,14 +270,14 @@ export default function TermsPage() {
           Vous pouvez supprimer votre compte à tout moment depuis votre profil dans l&apos;Application. La suppression entraîne l&apos;anonymisation de vos publications communautaires et la suppression de vos données personnelles dans les délais prévus à l&apos;article 6.4.
         </p>
 
-        <h3>9.2 Résiliation par LinkMind</h3>
+        <h3>9.2 Résiliation par BASYAM</h3>
         <p>
-          LinkMind se réserve le droit de suspendre ou supprimer tout compte en cas de violation des présentes CGU, d&apos;activité frauduleuse ou de comportement portant atteinte à l&apos;intégrité de la communauté, sans préavis ni indemnité.
+          BASYAM se réserve le droit de suspendre ou supprimer tout compte en cas de violation des présentes CGU, d&apos;activité frauduleuse ou de comportement portant atteinte à l&apos;intégrité de la communauté, sans préavis ni indemnité.
         </p>
 
         <h2>Article 10 — Limitation de responsabilité</h2>
         <p>
-          Dans les limites permises par la loi applicable, LinkMind ne saurait être tenu responsable des dommages directs ou indirects résultant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser l&apos;Application, des informations fournies par l&apos;assistant IA, des interactions entre utilisateurs dans la communauté, ou des prestations des professionnels partenaires.
+          Dans les limites permises par la loi applicable, BASYAM ne saurait être tenu responsable des dommages directs ou indirects résultant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser l&apos;Application, des informations fournies par l&apos;assistant IA, des interactions entre utilisateurs dans la communauté, ou des prestations des professionnels partenaires.
         </p>
         <p>
           L&apos;utilisateur reconnaît utiliser l&apos;Application sous sa propre responsabilité et à ses risques.
@@ -292,10 +292,10 @@ export default function TermsPage() {
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4 text-center">
           <p className="font-semibold text-[#1C1010] mb-2">Pour toute question :</p>
           <a 
-            href="mailto:contact@linkmind.app" 
+            href="mailto:contact@basyam.app" 
             className="text-xl font-bold text-[#77021D] hover:text-[#E07B2A] transition-colors"
           >
-            contact@linkmind.app
+            contact@basyam.app
           </a>
         </div>
 

@@ -4,12 +4,12 @@ import { useReveal } from "./useReveal";
 const P = "#77021D"; const S = "#F5B731";
 
 const testimonials = [
-  { avatar:"A", bg:"#9E1530", name:"Amara D.",  role:"L3 Droit, Paris",
-    text:"La communauté LinkMind m'a sauvée pendant les partiels. Lire que d'autres galèrent aussi, ça m'a redonné de la force. Je me sentais moins seule dans ma bulle.", stars: 5 },
-  { avatar:"K", bg:"#5BAD72", name:"Kofi M.",   role:"M1 Informatique, Lyon",
-    text:"J'ai réservé une consultation avec un psy via l'app. C'était simple, sans jugement. En deux semaines j'avais déjà des outils concrets pour gérer mon stress.", stars: 5 },
-  { avatar:"S", bg:P,         name:"Solène R.", role:"BTS Commerce, Bordeaux",
-    text:"Mindo à 3h du mat quand je pouvais plus dormir. Pas de jugement, juste des questions qui m'ont aidée à poser les mots sur ce que je vivais. Ça change tout.", stars: 5 },
+  { avatar:"A", bg:"#9E1530", name:"Aminata K.", role:"Étudiante, Ouagadougou",
+    text:"La communauté BASYAM m'a aidée pendant les examens. Savoir que d'autres vivent les mêmes choses, ça soulage vraiment. Je me sentais moins seule.", stars: 5 },
+  { avatar:"K", bg:"#5BAD72", name:"Kofi M.",    role:"Jeune professionnel, Bobo-Dioulasso",
+    text:"J'ai réservé une consultation avec un coach via l'app. Simple, sans jugement. En deux semaines j'avais des outils concrets pour gérer mon stress au travail.", stars: 5 },
+  { avatar:"S", bg:P,         name:"Salimata B.", role:"Lycéenne, Ouagadougou",
+    text:"Mindo à 23h quand j'arrivais plus à me concentrer. Pas de jugement, juste des questions qui m'ont aidée à poser les mots sur ce que je vivais. Ça change tout.", stars: 5 },
 ];
 
 function TestimonialCard({ t, delay }: { t: typeof testimonials[0]; delay: number }) {

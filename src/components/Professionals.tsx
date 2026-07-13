@@ -12,7 +12,7 @@ const pros = [
 const steps = [
   { num: "1", icon: "🔍", title: "Parcours les profils",   desc: "Filtre par spécialité, ville, disponibilité et mode (présentiel ou en ligne)." },
   { num: "2", icon: "📅", title: "Réserve en deux clics", desc: "Choisis un créneau, envoie un message, et attends la confirmation admin." },
-  { num: "3", icon: "💬", title: "Consulte sereinement",  desc: "Rencontre ton professionnel avec le soutien de LinkMind en arrière-plan." },
+  { num: "3", icon: "💬", title: "Consulte sereinement",  desc: "Rencontre ton professionnel avec le soutien de BASYAM en arrière-plan." },
 ];
 
 export default function Professionals() {
@@ -30,7 +30,7 @@ export default function Professionals() {
             <span style={{ color: P }}>un expert t&apos;attend</span>
           </h2>
           <p style={{ fontSize: "clamp(0.9rem,2vw,1rem)", color: "#8A7070", fontWeight: 500, maxWidth: 520, margin: "0 auto 3rem", lineHeight: 1.7 }}>
-            Psychologues, coachs, médecins — disponibles en ligne ou en présentiel. Réserve une consultation directement depuis l&apos;app, validée par notre équipe.
+            Psychologues, coachs, médecins — disponibles en ligne ou en présentiel, au Burkina et dans la région. Réserve une consultation directement depuis l&apos;app.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export default function Professionals() {
             { icon: "🔒", label: "Consultation confidentielle" },
             { icon: "✅", label: "Professionnels vérifiés" },
             { icon: "💳", label: "Paiement sécurisé" },
-            { icon: "⭐", label: "4.8 / 5 de satisfaction" },
+            { icon: "🌍", label: "Burkina & région" },
           ].map(b => (
             <div key={b.label} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: "clamp(0.78rem,2vw,0.85rem)", fontWeight: 600, color: "#8A7070" }}>
               <span style={{ fontSize: "1.1rem" }}>{b.icon}</span>

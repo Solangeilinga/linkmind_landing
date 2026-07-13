@@ -17,7 +17,7 @@ export function CTABanner() {
         {/* Logo */}
         <div className="reveal" style={{ display:"flex", justifyContent:"center", marginBottom:"1.5rem", ...(visible?{opacity:1,transform:"none"}:{}) }}>
           <div style={{ width:72, height:72, borderRadius:20, background:"rgba(250,247,245,.15)", display:"flex", alignItems:"center", justifyContent:"center", backdropFilter:"blur(10px)" }}>
-            <Image src="/logo.png" alt="LinkMind" width={48} height={48} style={{ borderRadius:12, objectFit:"contain" }} />
+            <Image src="/logo.png" alt="BASYAM" width={48} height={48} style={{ borderRadius:12, objectFit:"contain" }} />
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export function CTABanner() {
         </h2>
 
         <p className="reveal" style={{ fontSize:"clamp(0.9rem,2vw,1.05rem)", color:"rgba(250,247,245,.65)", fontWeight:500, marginBottom:"2.5rem", ...(visible?{opacity:1,transform:"none"}:{}), transitionDelay:".2s" }}>
-          Rejoins 12 000+ jeunes qui prennent soin d&apos;eux chaque jour.<br className="cta-br"/>
+          Rejoins les premiers jeunes à tester BASYAM avant le lancement officiel.<br className="cta-br"/>
           Communauté · Professionnels · IA Mindo · 100% gratuit pour commencer.
         </p>
 
@@ -38,7 +38,7 @@ export function CTABanner() {
             style={{ background:"#FAF7F5", color:P, padding:"14px 30px", borderRadius:100, fontSize:"0.95rem", boxShadow:"0 6px 20px rgba(0,0,0,.3)" }}
             onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform="translateY(-2px)"; el.style.boxShadow="0 10px 30px rgba(0,0,0,.4)"; }}
             onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.transform="none"; el.style.boxShadow="0 6px 20px rgba(0,0,0,.3)"; }}>
-            📱 Télécharger LinkMind
+            📱 Télécharger gratuitement
           </a>
         </div>
       </div>
@@ -71,14 +71,14 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:"1rem" }}>
-              <Image src="/logo.png" alt="LinkMind" width={32} height={32} style={{ borderRadius:8, objectFit:"contain" }} />
-              <span style={{ fontWeight:800, fontSize:"1.1rem", color:"#FAF7F5" }}>LinkMind</span>
+              <Image src="/logo.png" alt="BASYAM" width={32} height={32} style={{ borderRadius:8, objectFit:"contain" }} />
+              <span style={{ fontWeight:800, fontSize:"1.1rem", color:"#FAF7F5" }}>BASYAM</span>
             </div>
             <p style={{ fontSize:"0.85rem", color:"rgba(250,247,245,.45)", fontWeight:500, lineHeight:1.7 }}>
-              L&apos;application de santé mentale pensée pour les jeunes. Gratuit, bienveillant, confidentiel.
+              L&apos;application de bien-être mental pensée pour les jeunes africains. Gratuite, bienveillante, confidentielle.
             </p>
             <div style={{ marginTop:"1rem", fontSize:"0.7rem", color:"rgba(250,247,245,.25)", fontWeight:500 }}>
-              CGU v.2025-01 · Mai 2026
+              CGU v.2025-01 · Juin 2026
             </div>
           </div>
 
@@ -107,7 +107,7 @@ export function Footer() {
         {/* Bottom */}
         <div style={{ paddingTop:"1.5rem", display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"space-between", gap:"1rem" }}>
           <div style={{ fontSize:"0.78rem", color:"rgba(250,247,245,.25)", fontWeight:500 }}>
-            © 2026 LinkMind — Fait avec 💙 pour le bien-être des jeunes
+            © 2026 BASYAM — Bien-être mental des jeunes africains
           </div>
           <div style={{ display:"flex", gap:"1.5rem", flexWrap:"wrap" }}>
             {["Twitter","Instagram","LinkedIn"].map(s=>(

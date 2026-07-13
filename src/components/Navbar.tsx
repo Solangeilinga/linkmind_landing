@@ -35,9 +35,9 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
-          <Image src="/logo.png" alt="LinkMind" width={34} height={34} style={{ borderRadius: 8, objectFit: "contain" }} />
+          <Image src="/logo.png" alt="BASYAM" width={34} height={34} style={{ borderRadius: 8, objectFit: "contain" }} />
           <span style={{ fontFamily: "'Nunito',sans-serif", fontWeight: 800, fontSize: "1.15rem", color: P, letterSpacing: "-.01em" }}>
-            LinkMind
+            BASYAM
           </span>
         </a>
 

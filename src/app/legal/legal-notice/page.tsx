@@ -50,7 +50,7 @@ export default function LegalNoticePage() {
 
         <h2>1. Éditeur de l&apos;application</h2>
         <div className="bg-[#FAF7F5] rounded-xl p-5 my-4 space-y-2">
-          <p><span className="font-semibold">Nom :</span> LinkMind</p>
+          <p><span className="font-semibold">Nom :</span> BASYAM</p>
           <p><span className="font-semibold">Forme juridique :</span> Société à responsabilité limitée</p>
           <p><span className="font-semibold">Capital social :</span> 5 000 000 FCFA</p>
           <p><span className="font-semibold">RCCM :</span> BF-OUA-2025-12345 (Ouagadougou)</p>
@@ -58,14 +58,14 @@ export default function LegalNoticePage() {
           <p><span className="font-semibold">Numéro TVA intracommunautaire :</span> FR12345678901</p>
           <p><span className="font-semibold">Siège social :</span> Avenue Kwamé Nkrumah, 01 BP 1234, Ouagadougou 01, Burkina Faso</p>
           <p><span className="font-semibold">Téléphone :</span> +226 25 00 00 00</p>
-          <p><span className="font-semibold">Email :</span> <a href="mailto:contact@linkmind.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">contact@linkmind.app</a></p>
+          <p><span className="font-semibold">Email :</span> <a href="mailto:contact@basyam.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">contact@basyam.app</a></p>
         </div>
 
         <h2>2. Directeur de la publication</h2>
         <div className="bg-[#FAF7F5] rounded-xl p-5 my-4">
           <p><span className="font-semibold">Nom :</span> Jean-Baptiste OUEDRAOGO</p>
           <p><span className="font-semibold">Fonction :</span> Directeur Général</p>
-          <p><span className="font-semibold">Email :</span> jb.ouedraogo@linkmind.app</p>
+          <p><span className="font-semibold">Email :</span> jb.ouedraogo@basyam.app</p>
         </div>
 
         <h2>3. Hébergement de l&apos;application</h2>
@@ -79,17 +79,17 @@ export default function LegalNoticePage() {
         <h2>4. Protection des données (DPO)</h2>
         <div className="bg-[#FAF7F5] rounded-xl p-5 my-4">
           <p><span className="font-semibold">Délégué à la protection des données :</span> Marie KABORE</p>
-          <p><span className="font-semibold">Contact DPO :</span> <a href="mailto:dpo@linkmind.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">dpo@linkmind.app</a></p>
+          <p><span className="font-semibold">Contact DPO :</span> <a href="mailto:dpo@basyam.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">dpo@basyam.app</a></p>
         </div>
 
         <h2>5. Déclaration CNIL / CIL (Burkina Faso)</h2>
         <p>
-          Conformément à la loi burkinabè n°001-2021/AN portant protection des données à caractère personnel, l&apos;application LinkMind a fait l&apos;objet d&apos;une déclaration auprès de la CIL (Commission de l&apos;Informatique et des Libertés du Burkina Faso) sous le numéro : <strong>2025-0012345</strong>.
+          Conformément à la loi burkinabè n°001-2021/AN portant protection des données à caractère personnel, l&apos;application BASYAM a fait l&apos;objet d&apos;une déclaration auprès de la CIL (Commission de l&apos;Informatique et des Libertés du Burkina Faso) sous le numéro : <strong>2025-0012345</strong>.
         </p>
 
         <h2>6. Propriété intellectuelle</h2>
         <p>
-          L&apos;intégralité de l&apos;application LinkMind (design, textes, illustrations, logos, code source, base de données) est la propriété exclusive de LinkMind. Toute reproduction, modification ou exploitation non autorisée est interdite.
+          L&apos;intégralité de l&apos;application BASYAM (design, textes, illustrations, logos, code source, base de données) est la propriété exclusive de BASYAM. Toute reproduction, modification ou exploitation non autorisée est interdite.
         </p>
         <p>
           Marque déposée à l&apos;OAPI (Organisation Africaine de la Propriété Intellectuelle) sous le numéro : <strong>2025-123456</strong>.
@@ -97,17 +97,17 @@ export default function LegalNoticePage() {
 
         <h2>7. Crédits</h2>
         <ul>
-          <li><strong>Design UI/UX :</strong> LinkMind Studio</li>
-          <li><strong>Développement :</strong> LinkMind Tech Team</li>
-          <li><strong>Illustrations :</strong> Freepik (licence premium) / Illustrations personnalisées LinkMind</li>
+          <li><strong>Design UI/UX :</strong> BASYAM Studio</li>
+          <li><strong>Développement :</strong> BASYAM Tech Team</li>
+          <li><strong>Illustrations :</strong> Freepik (licence premium) / Illustrations personnalisées BASYAM</li>
           <li><strong>Polices :</strong> Nunito (Google Fonts, licence OFL)</li>
           <li><strong>Icons :</strong> Lucide Icons (licence MIT)</li>
-          <li><strong>IA Assistant Mindo :</strong> Modèle propriétaire fine-tuné par LinkMind</li>
+          <li><strong>IA Assistant Mindo :</strong> Modèle propriétaire fine-tuné par BASYAM</li>
         </ul>
 
         <h2>8. Conditions d&apos;utilisation</h2>
         <p>
-          L&apos;utilisation de l&apos;application LinkMind est régie par nos <Link href="/legal/terms" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">Conditions Générales d&apos;Utilisation</Link> et notre <Link href="/legal/privacy" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">Politique de Confidentialité</Link>.
+          L&apos;utilisation de l&apos;application BASYAM est régie par nos <Link href="/legal/terms" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">Conditions Générales d&apos;Utilisation</Link> et notre <Link href="/legal/privacy" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">Politique de Confidentialité</Link>.
         </p>
 
         <h2>9. Médiation</h2>
@@ -121,15 +121,15 @@ export default function LegalNoticePage() {
 
         <h2>10. Assurance</h2>
         <p>
-          LinkMind est couverte par une assurance Responsabilité Civile Professionnelle auprès de <strong>Allianz Burkina Faso</strong>, contrat n° <strong>RC-2025-12345</strong>.
+          BASYAM est couverte par une assurance Responsabilité Civile Professionnelle auprès de <strong>Allianz Burkina Faso</strong>, contrat n° <strong>RC-2025-12345</strong>.
         </p>
 
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-8 text-center">
           <p className="text-sm text-[#1C1010]">
             <span className="font-semibold">📄 Pour toute demande officielle :</span><br />
-            LinkMind - Service Juridique<br />
+            BASYAM - Service Juridique<br />
             Avenue Kwamé Nkrumah, 01 BP 1234, Ouagadougou 01, Burkina Faso<br />
-            ✉️ legal@linkmind.app
+            ✉️ legal@basyam.app
           </p>
         </div>
 

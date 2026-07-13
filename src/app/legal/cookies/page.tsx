@@ -199,7 +199,7 @@ export default function CookiesPage() {
 
         <h2>Contact</h2>
         <p>
-          Pour toute question relative aux cookies : <strong>contact@linkmind.app</strong>
+          Pour toute question relative aux cookies : <strong>contact@basyam.app</strong>
         </p>
 
         <div className="text-center text-sm text-[#8A7070] pt-8 border-t border-[#EDE5E3]">

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LinkMind,Ton espace mental, chaque jour",
-  description: "LinkMind accompagne les jeunes : suivi d'humeur, assistant IA Mindo, communauté anonyme et mise en relation avec des professionnels.",
+  title: "BASYAM — Ton espace bien-être, chaque jour",
+  description: "BASYAM accompagne les jeunes africains : suivi d'humeur, assistant IA Mindo, communauté anonyme et mise en relation avec des professionnels de santé mentale.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

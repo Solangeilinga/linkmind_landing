@@ -29,7 +29,7 @@ export default function PhoneMockup() {
                 <div style={{ fontSize: 11, color: "#8A7070", fontWeight: 600 }}>Bonjour,</div>
                 <div style={{ fontWeight: 800, fontSize: 14, color: "#1C1010" }}>Amara 👋</div>
               </div>
-              <Image src="/logo.png" alt="LinkMind" width={26} height={26} style={{ borderRadius: 8, objectFit: "contain" }} />
+              <Image src="/logo.png" alt="BASYAM" width={26} height={26} style={{ borderRadius: 8, objectFit: "contain" }} />
             </div>
 
             {/* Mood card */}
