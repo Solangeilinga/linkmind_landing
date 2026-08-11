@@ -75,7 +75,7 @@ export default function PrivacyPage() {
           BASYAM est une application mobile de bien-être mental éditée par l&apos;équipe BASYAM. La présente politique de confidentialité décrit comment nous collectons, utilisons, stockons et protégeons vos données personnelles lorsque vous utilisez notre application.
         </p>
         <p>
-          Pour toute question relative à vos données personnelles, vous pouvez nous contacter à : <strong>contact@basyam.app</strong>
+          Pour toute question relative à vos données personnelles, vous pouvez nous contacter à : <strong>support@basyam.com</strong>
         </p>
 
         <h2>2. Quelles données collectons-nous ?</h2>
@@ -226,7 +226,7 @@ export default function PrivacyPage() {
         </div>
 
         <p>
-          Pour exercer ces droits, rendez-vous dans votre <strong>Profil &gt; Paramètres &gt; Mes données</strong> dans l&apos;application, ou contactez-nous à <strong>contact@basyam.app</strong>.
+          Pour exercer ces droits, rendez-vous dans votre <strong>Profil &gt; Paramètres &gt; Mes données</strong> dans l&apos;application, ou contactez-nous à <strong>support@basyam.com</strong>.
         </p>
 
         <h2>8. Sécurité des données</h2>
@@ -265,7 +265,7 @@ export default function PrivacyPage() {
         <h2>12. Nous contacter</h2>
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4">
           <p className="font-semibold mb-2">Pour toute question relative à vos données personnelles :</p>
-          <p className="mb-1">📧 <a href="mailto:contact@basyam.app" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">contact@basyam.app</a></p>
+          <p className="mb-1">📧 <a href="mailto:support@basyam.com" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">support@basyam.com</a></p>
           <p className="text-sm text-[#8A7070]">📮 Ou via notre formulaire de contact dans l&apos;application</p>
         </div>
 

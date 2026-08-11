@@ -79,7 +79,7 @@ export default function LegalNoticePage() {
         <h2>4. Protection des données (DPO)</h2>
         <div className="bg-[#FAF7F5] rounded-xl p-5 my-4">
           <p><span className="font-semibold">Délégué à la protection des données :</span> Marie KABORE</p>
-          <p><span className="font-semibold">Contact DPO :</span> <a href="mailto:dpo@basyam.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">dpo@basyam.app</a></p>
+          <p><span className="font-semibold">Contact DPO :</span> <a href="mailto:dpo@basyam.com" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">dpo@basyam.app</a></p>
         </div>
 
         <h2>5. Déclaration CNIL / CIL (Burkina Faso)</h2>
@@ -129,7 +129,7 @@ export default function LegalNoticePage() {
             <span className="font-semibold">📄 Pour toute demande officielle :</span><br />
             BASYAM - Service Juridique<br />
             Avenue Kwamé Nkrumah, 01 BP 1234, Ouagadougou 01, Burkina Faso<br />
-            ✉️ legal@basyam.app
+            ✉️ legal@basyam.com
           </p>
         </div>
 
