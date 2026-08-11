@@ -90,7 +90,7 @@ export default function TermsPage() {
 
         <h2>Article 1 — Objet</h2>
         <p>
-          BASYAM est une application mobile de bien-être mental destinée aux jeunes âgés de 15 ans et plus. Elle propose des outils de suivi d&apos;humeur, un assistant conversationnel basé sur l&apos;intelligence artificielle, des défis de bien-être, une communauté d&apos;entraide anonyme, et un accès à des professionnels de santé mentale partenaires.
+          BASYAM est une application mobile de bien-être mental destinée aux jeunes âgés de 18 ans et plus. Elle propose des outils de suivi d&apos;humeur, un assistant conversationnel basé sur l&apos;intelligence artificielle, des défis de bien-être, une communauté d&apos;entraide anonyme, et un accès à des professionnels de santé mentale partenaires.
         </p>
         <p className="bg-[#F5EFED] p-4 rounded-xl italic">
           BASYAM est un outil de soutien au bien-être et ne constitue en aucun cas un service médical, un dispositif de diagnostic, ni un substitut à une consultation professionnelle.
@@ -99,7 +99,7 @@ export default function TermsPage() {
         <h2>Article 2 — Conditions d&apos;accès</h2>
         <h3>2.1 Âge minimum</h3>
         <p>
-          L&apos;utilisation de BASYAM est réservée aux personnes âgées d&apos;au moins 15 ans. En créant un compte, vous certifiez avoir atteint cet âge. BASYAM se réserve le droit de suspendre tout compte dont l&apos;utilisateur s&apos;avèrerait être mineur en dessous de cet âge, sans préavis.
+          L&apos;utilisation de BASYAM est réservée aux personnes âgées d&apos;au moins 18 ans. En créant un compte, vous certifiez avoir atteint cet âge. BASYAM se réserve le droit de suspendre tout compte dont l&apos;utilisateur s&apos;avèrerait être mineur en dessous de cet âge, sans préavis.
         </p>
 
         <h3>2.2 Création de compte</h3>
@@ -292,10 +292,10 @@ export default function TermsPage() {
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4 text-center">
           <p className="font-semibold text-[#1C1010] mb-2">Pour toute question :</p>
           <a 
-            href="mailto:contact@basyam.app" 
+            href="mailto:support@basyam.com" 
             className="text-xl font-bold text-[#77021D] hover:text-[#E07B2A] transition-colors"
           >
-            contact@basyam.app
+            support@basyam.com
           </a>
         </div>
 

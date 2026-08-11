@@ -83,7 +83,7 @@ export default function PrivacyPage() {
         <h3>2.1 Données d&apos;identification</h3>
         <ul>
           <li>Adresse email ou numéro de téléphone</li>
-          <li>Âge (uniquement pour vérifier l&apos;âge minimum de 15 ans)</li>
+          <li>Âge (uniquement pour vérifier l&apos;âge minimum de 18 ans)</li>
           <li>Ville (optionnelle)</li>
         </ul>
 
@@ -254,7 +254,7 @@ export default function PrivacyPage() {
 
         <h2>10. Mineurs</h2>
         <p>
-          BASYAM est destiné aux personnes âgées d&apos;au moins 15 ans. Nous ne collectons pas sciemment les données d&apos;enfants de moins de 15 ans. Si nous apprenons qu&apos;un utilisateur a moins de 15 ans, nous supprimons immédiatement son compte et ses données.
+          BASYAM est destiné aux personnes âgées d&apos;au moins 18 ans. Nous ne collectons pas sciemment les données de mineurs de moins de 18 ans. Si nous apprenons qu&apos;un utilisateur a moins de 18 ans, nous supprimons immédiatement son compte et ses données.
         </p>
 
         <h2>11. Modifications de cette politique</h2>

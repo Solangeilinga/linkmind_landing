@@ -58,14 +58,14 @@ export default function LegalNoticePage() {
           <p><span className="font-semibold">Numéro TVA intracommunautaire :</span> FR12345678901</p>
           <p><span className="font-semibold">Siège social :</span> Avenue Kwamé Nkrumah, 01 BP 1234, Ouagadougou 01, Burkina Faso</p>
           <p><span className="font-semibold">Téléphone :</span> +226 25 00 00 00</p>
-          <p><span className="font-semibold">Email :</span> <a href="mailto:contact@basyam.app" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">contact@basyam.app</a></p>
+          <p><span className="font-semibold">Email :</span> <a href="mailto:support@basyam.com" className="text-[#77021D] hover:text-[#E07B2A] transition-colors">support@basyam.com</a></p>
         </div>
 
         <h2>2. Directeur de la publication</h2>
         <div className="bg-[#FAF7F5] rounded-xl p-5 my-4">
           <p><span className="font-semibold">Nom :</span> Jean-Baptiste OUEDRAOGO</p>
           <p><span className="font-semibold">Fonction :</span> Directeur Général</p>
-          <p><span className="font-semibold">Email :</span> jb.ouedraogo@basyam.app</p>
+          <p><span className="font-semibold">Email :</span> jb.ouedraogo@basyam.com</p>
         </div>
 
         <h2>3. Hébergement de l&apos;application</h2>
