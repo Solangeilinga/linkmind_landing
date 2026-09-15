@@ -8,7 +8,6 @@ const links = [
   { label: "Fonctionnalités", href: "#features"      },
   { label: "Communauté",      href: "#community"     },
   { label: "Professionnels",  href: "#professionals" },
-  { label: "Mindo",        href: "#mindo"         },
 ];
 
 export default function Navbar() {

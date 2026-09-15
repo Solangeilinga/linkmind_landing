@@ -1,7 +1,7 @@
 "use client";
 import { useReveal } from "./useReveal";
 
-const P = "#77021D"; const S = "#F5B731"; const A = "#E07B2A";
+const P = "#77021D";
 
 const features = [
   { icon: "💬", title: "Communauté anonyme",
@@ -10,18 +10,15 @@ const features = [
   { icon: "👨‍⚕️", title: "Mise en relation avec des pros",
     desc: "Trouve et réserve une consultation avec un psychologue, coach ou médecin partenaire. Directement depuis l'app, en quelques secondes.",
     tag: "Prise de RDV simplifiée · Présentiel & en ligne", large: false, dark: true, bg: "", tagColor: "rgba(250,247,245,.6)" },
-  { icon: "✨", title: "Mindo — ton assistant bienveillant",
-    desc: "Un assistant entraîné pour écouter sans juger et t'accompagner 24h/24.",
-    tag: "10 messages/jour gratuits · Mémoire contextuelle", large: false, dark: false, bg: "rgba(224,123,42,.08)", tagColor: A },
   { icon: "🌙", title: "Suivi d'humeur quotidien",
     desc: "10 secondes par jour pour noter comment tu te sens. Visualise tes patterns, reçois des insights, et comprends mieux tes émotions semaine après semaine.",
     tag: "Daily check-in · Historique · Tendances", large: false, dark: false, bg: "rgba(91,143,196,.1)", tagColor: "#5B8FC4" },
   { icon: "🏆", title: "Défis bien-être",
     desc: "Des micro-défis quotidiens (respiration, gratitude, pleine conscience) pour construire de bonnes habitudes progressivement et gagner des badges.",
     tag: "Streaks · Badges · Niveaux", large: false, dark: false, bg: "rgba(245,183,49,.1)", tagColor: "#B08010" },
-  { icon: "📊", title: "Rapports & mémoire émotionnelle",
-    desc: "Chaque semaine, un résumé de ton évolution. Mindo mémorise tes échanges pour un accompagnement qui s'affine avec le temps.",
-    tag: "Rapport hebdo · Export PDF · Mémoire IA", large: true, dark: false, bg: "rgba(91,168,168,.1)", tagColor: "#5BA8A8" },
+  { icon: "📊", title: "Tendances & insights personnels",
+    desc: "Vois quels facteurs reviennent le plus souvent dans ton humeur, et suis ton évolution semaine après semaine.",
+    tag: "Historique · Facteurs récurrents · Tendances", large: true, dark: false, bg: "rgba(91,168,168,.1)", tagColor: "#5BA8A8" },
 ];
 
 function FeatureCard({ f, delay }: { f: typeof features[0]; delay: number }) {

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "BASYAM — Ton espace bien-être, chaque jour",
-  description: "BASYAM accompagne les jeunes africains : suivi d'humeur, assistant IA Mindo, communauté anonyme et mise en relation avec des professionnels de santé mentale.",
+  description: "BASYAM accompagne les jeunes africains : suivi d'humeur, communauté anonyme et mise en relation avec des professionnels de santé mentale.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

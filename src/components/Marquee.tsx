@@ -2,7 +2,6 @@ const items = [
   "Suivi d'humeur quotidien",
   "Communauté anonyme",
   "Consultations pro",
-  "Assistant IA Mindo",
   "Défis bien-être",
   "100% confidentiel",
   "Gratuit pour commencer",

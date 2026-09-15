@@ -9,7 +9,7 @@ const testimonials = [
   { avatar:"K", bg:"#5BAD72", name:"Kofi M.",    role:"Jeune professionnel, Bobo-Dioulasso",
     text:"J'ai réservé une consultation avec un coach via l'app. Simple, sans jugement. En deux semaines j'avais des outils concrets pour gérer mon stress au travail.", stars: 5 },
   { avatar:"S", bg:P,         name:"Salimata B.", role:"Lycéenne, Ouagadougou",
-    text:"Mindo à 23h quand j'arrivais plus à me concentrer. Pas de jugement, juste des questions qui m'ont aidée à poser les mots sur ce que je vivais. Ça change tout.", stars: 5 },
+    text:"Noter mon humeur chaque jour, même en 10 secondes, m'a fait réaliser des trucs que je n'aurais jamais vus autrement. Les tendances de la semaine, c'est bluffant.", stars: 5 },
 ];
 
 function TestimonialCard({ t, delay }: { t: typeof testimonials[0]; delay: number }) {

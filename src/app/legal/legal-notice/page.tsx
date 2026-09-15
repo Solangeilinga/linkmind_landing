@@ -102,7 +102,6 @@ export default function LegalNoticePage() {
           <li><strong>Illustrations :</strong> Freepik (licence premium) / Illustrations personnalisées BASYAM</li>
           <li><strong>Polices :</strong> Nunito (Google Fonts, licence OFL)</li>
           <li><strong>Icons :</strong> Lucide Icons (licence MIT)</li>
-          <li><strong>IA Assistant Mindo :</strong> Modèle propriétaire fine-tuné par BASYAM</li>
         </ul>
 
         <h2>8. Conditions d&apos;utilisation</h2>

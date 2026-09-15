@@ -90,7 +90,6 @@ export default function PrivacyPage() {
         <h3>2.2 Données d&apos;activité</h3>
         <ul>
           <li>Suivi d&apos;humeur quotidien (émotions enregistrées)</li>
-          <li>Interactions avec l&apos;assistant IA Mindo</li>
           <li>Participation aux défis bien-être</li>
           <li>Progression dans le système de gamification (points, niveaux)</li>
         </ul>
@@ -206,7 +205,14 @@ export default function PrivacyPage() {
             <span className="text-xl">🗑️</span>
             <div>
               <div className="font-semibold">Droit à l&apos;effacement (droit à l&apos;oubli)</div>
-              <div className="text-sm text-[#8A7070]">Supprimer votre compte et vos données</div>
+              <div className="text-sm text-[#8A7070]">
+                Supprimer votre compte et vos données — directement dans l&apos;app (Réglages) ou,
+                sans l&apos;app,{" "}
+                <Link href="/legal/account-deletion" className="text-[#77021D] font-semibold underline">
+                  via cette page
+                </Link>
+                .
+              </div>
             </div>
           </div>
           <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">

@@ -64,10 +64,10 @@ export default function PhoneMockup() {
               </div>
             </div>
 
-            {/* Mindo bubble */}
+            {/* Post communauté */}
             <div style={{ borderRadius: "13px 13px 13px 4px", padding: "9px 11px", background: "linear-gradient(135deg,rgba(119,2,29,.07),rgba(224,123,42,.07))", border: "1px solid rgba(119,2,29,.12)" }}>
-              <div style={{ fontSize: 10, color: P, fontWeight: 700, marginBottom: 2 }}>✨ Mindo</div>
-              <div style={{ fontSize: 11, color: "#8A7070", fontStyle: "italic", lineHeight: 1.6 }}>&quot;Je suis là si tu veux parler de ta journée.&quot;</div>
+              <div style={{ fontSize: 10, color: P, fontWeight: 700, marginBottom: 2 }}>🌿 Anonyme</div>
+              <div style={{ fontSize: 11, color: "#8A7070", fontStyle: "italic", lineHeight: 1.6 }}>&quot;Merci d&apos;avoir partagé, je vis exactement la même chose en ce moment.&quot;</div>
             </div>
 
             {/* Streak */}

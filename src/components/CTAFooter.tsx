@@ -29,7 +29,7 @@ export function CTABanner() {
 
         <p className="reveal" style={{ fontSize:"clamp(0.9rem,2vw,1.05rem)", color:"rgba(250,247,245,.65)", fontWeight:500, marginBottom:"2.5rem", ...(visible?{opacity:1,transform:"none"}:{}), transitionDelay:".2s" }}>
           Rejoins les premiers jeunes à tester BASYAM avant le lancement officiel.<br className="cta-br"/>
-          Communauté · Professionnels · IA Mindo · 100% gratuit pour commencer.
+          Communauté · Professionnels · 100% gratuit pour commencer.
         </p>
 
         <div className="reveal" style={{ ...(visible?{opacity:1,transform:"none"}:{}), transitionDelay:".3s" }}>
@@ -52,14 +52,14 @@ export function Footer() {
       { name: "Fonctionnalités", href: "#features" },
       { name: "Communauté",      href: "#community" },
       { name: "Professionnels",  href: "#professionals" },
-      { name: "Mindo",        href: "#mindo" },
     ]},
     { group: "Ressources", links: [
       { name: "Aide", href: "/help" },
     ]},
     { group: "Légal", links: [
-      { name: "Confidentialité", href: "/legal/privacy" },
-      { name: "CGU",             href: "/legal/terms" },
+      { name: "Confidentialité",       href: "/legal/privacy" },
+      { name: "CGU",                   href: "/legal/terms" },
+      { name: "Suppression de compte", href: "/legal/account-deletion" },
     ]},
   ];
 

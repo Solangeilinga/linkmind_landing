@@ -123,29 +123,23 @@ export default function TermsPage() {
           L&apos;Application permet à l&apos;utilisateur d&apos;enregistrer son état émotionnel quotidiennement, de visualiser son évolution sur plusieurs jours et d&apos;accéder à des recommandations personnalisées basées sur ses données.
         </p>
 
-        <h3>3.2 Assistant Mindo</h3>
-        <p>
-          Mindo est un assistant conversationnel propulsé par l&apos;intelligence artificielle. Il est conçu pour offrir une écoute, des suggestions de bien-être et orienter l&apos;utilisateur vers des ressources appropriées. Mindo n&apos;est pas un professionnel de santé et ses réponses ne constituent pas un avis médical ou psychologique. En version gratuite, son utilisation est limitée à 10 messages par jour.
-        </p>
-
-        <h3>3.3 Défis bien-être</h3>
+        <h3>3.2 Défis bien-être</h3>
         <p>
           Des défis quotidiens sont proposés à l&apos;utilisateur en fonction de son humeur. Leur réalisation génère des points et contribue à la progression dans le système de gamification de l&apos;Application.
         </p>
 
-        <h3>3.4 Communauté anonyme</h3>
+        <h3>3.3 Communauté anonyme</h3>
         <p>
           L&apos;Application propose un espace communautaire où les utilisateurs peuvent partager leurs ressentis de manière anonyme, interagir avec les publications d&apos;autres membres et apporter leur soutien. Chaque utilisateur est identifié dans la communauté par un pseudonyme généré automatiquement.
         </p>
 
-        <h3>3.5 Accès aux professionnels</h3>
+        <h3>3.4 Accès aux professionnels</h3>
         <p>
           BASYAM propose un annuaire de professionnels de santé mentale partenaires. La mise en relation avec ces professionnels est facilitée par l&apos;Application, mais BASYAM n&apos;est pas partie au contrat de prestation entre l&apos;utilisateur et le professionnel, et ne saurait être tenu responsable du contenu des consultations.
         </p>
 
-        <h3>3.6 Fonctionnalités Premium</h3>
-        <p>
-          Certaines fonctionnalités avancées sont réservées aux abonnés Premium, notamment l&apos;accès illimité à Mindo, la génération de rapports PDF mensuels et la suppression des publicités. Les conditions tarifaires sont précisées dans l&apos;Application.
+        <p className="bg-[#F5EFED] p-4 rounded-xl italic">
+          BASYAM est actuellement 100% gratuite, sans fonctionnalité payante.
         </p>
 
         <h2>Article 4 — Règles de conduite et contenu interdit</h2>

@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Sub */}
           <p className="animate-fadeUp delay-500"
             style={{ opacity: 0, fontSize: "clamp(0.95rem,2vw,1.1rem)", fontWeight: 500, color: "#8A7070", maxWidth: 520, lineHeight: 1.7, marginBottom: "2rem" }}>
-            Suis ton humeur, partage avec une communauté anonyme bienveillante, consulte un professionnel, et parle à <strong style={{ color: "#1C1010" }}>Mindo</strong>, ton assistant disponible 24h/24.
+            Suis ton humeur, partage avec une communauté anonyme bienveillante, et consulte un professionnel de santé mentale partenaire.
           </p>
 
           {/* CTAs */}
@@ -75,7 +75,7 @@ export default function Hero() {
             {[
               { num: "Phase pilote",  label: "Lancement" },
               { num: "100%",  label: "Gratuit & confidentiel" },
-              { num: "24h/24", label: "Mindo disponible" },
+              { num: "Anonyme", label: "Espace communautaire" },
             ].map(s => (
               <div key={s.num}>
                 <div style={{ fontWeight: 800, fontSize: "clamp(1.4rem,3vw,1.9rem)", color: P, letterSpacing: "-.03em", lineHeight: 1 }}>{s.num}</div>
