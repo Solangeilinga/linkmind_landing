@@ -13,26 +13,25 @@ export default function PrivacyPage() {
             Protection des données
           </span>
         </div>
-        
+
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#1C1010] mb-3 animate-fadeUp">
           Politique de Confidentialité
         </h1>
         <p className="text-[#8A7070] text-sm animate-fadeUp delay-200">
-          Dernière mise à jour : Mai 2026
+          Dernière mise à jour : Octobre 2026 · Version 2026-10
         </p>
       </div>
 
-      {/* Badge RGPD */}
-      <div className="bg-gradient-to-r from-[#5BAD72]/10 to-[#5B8FC4]/10 rounded-2xl p-4 mb-8 animate-fadeUp delay-350">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#5BAD72] rounded-full flex items-center justify-center">
-            <span className="text-white text-sm font-bold">RGPD</span>
-          </div>
-          <div>
-            <div className="font-semibold text-[#1C1010]">Conforme au RGPD</div>
-            <div className="text-xs text-[#8A7070]">Nous respectons vos droits sur vos données personnelles</div>
-          </div>
-        </div>
+      {/* En bref */}
+      <div className="bg-gradient-to-r from-[#5BAD72]/10 to-[#5B8FC4]/10 rounded-2xl p-5 mb-8 animate-fadeUp delay-350">
+        <div className="font-semibold text-[#1C1010] mb-2">En bref</div>
+        <ul className="text-sm text-[#2d2d2d] list-disc ml-5 space-y-1">
+          <li>BASYAM est une application de bien-être mental réservée aux personnes de 18 ans et plus.</li>
+          <li>Votre humeur et vos notes sont des données sensibles. Nous les utilisons uniquement pour faire fonctionner le service, jamais pour de la publicité, et nous ne les vendons pas.</li>
+          <li>Dans la communauté, les autres membres vous voient uniquement sous un pseudo.</li>
+          <li>Vous pouvez accéder à vos données, les exporter, les corriger ou supprimer votre compte à tout moment.</li>
+          <li>Pour toute question, écrivez-nous à support@basyam.com.</li>
+        </ul>
       </div>
 
       {/* Contenu */}
@@ -70,213 +69,282 @@ export default function PrivacyPage() {
           }
         `}</style>
 
-        <h2>1. Qui sommes-nous ?</h2>
+        <h2>1. Qui est responsable de vos données ?</h2>
         <p>
-          BASYAM est une application mobile de bien-être mental éditée par l&apos;équipe BASYAM. La présente politique de confidentialité décrit comment nous collectons, utilisons, stockons et protégeons vos données personnelles lorsque vous utilisez notre application.
-        </p>
-        <p>
-          Pour toute question relative à vos données personnelles, vous pouvez nous contacter à : <strong>support@basyam.com</strong>
+          Le responsable du traitement est BASYAM, éditeur de l&apos;application, dont les coordonnées figurent dans nos{" "}
+          <Link href="/legal/legal-notice" className="text-[#77021D] font-semibold underline">mentions légales</Link>.
+          Pour toute question ou demande concernant vos données personnelles, écrivez à <strong>support@basyam.com</strong>.
         </p>
 
         <h2>2. Quelles données collectons-nous ?</h2>
-        
-        <h3>2.1 Données d&apos;identification</h3>
+
+        <h3>2.1 Données de compte</h3>
         <ul>
           <li>Adresse email ou numéro de téléphone</li>
-          <li>Âge (uniquement pour vérifier l&apos;âge minimum de 18 ans)</li>
-          <li>Ville (optionnelle)</li>
+          <li>Mot de passe, conservé sous forme hachée et jamais en clair</li>
+          <li>Pseudo anonyme, choisi par vous ou généré automatiquement</li>
+          <li>Âge, ville et pays</li>
+          <li>Genre, de manière facultative</li>
         </ul>
 
-        <h3>2.2 Données d&apos;activité</h3>
+        <h3>2.2 Données de bien-être (données sensibles)</h3>
         <ul>
-          <li>Suivi d&apos;humeur quotidien (émotions enregistrées)</li>
-          <li>Participation aux défis bien-être</li>
-          <li>Progression dans le système de gamification (points, niveaux)</li>
+          <li>Humeur quotidienne, niveau de stress et facteurs que vous indiquez</li>
+          <li>Notes personnelles que vous ajoutez, qui sont chiffrées</li>
+          <li>Objectifs choisis, défis réalisés, points, badges et séries de jours</li>
         </ul>
 
-        <h3>2.3 Données communautaires</h3>
+        <h3>2.3 Bouton « Besoin d&apos;aide maintenant »</h3>
+        <p>
+          Lorsque vous utilisez ce bouton, une alerte est transmise à l&apos;équipe de suivi, accompagnée le cas échéant d&apos;un court extrait (200 caractères au maximum) du message que vous avez saisi. Un membre de l&apos;équipe peut ainsi réagir et suivre la situation.
+        </p>
+
+        <h3>2.4 Communauté</h3>
         <ul>
-          <li>Publications dans l&apos;espace communautaire (anonymisées)</li>
-          <li>Interactions avec les publications d&apos;autres utilisateurs</li>
-          <li>Pseudonyme généré automatiquement</li>
+          <li>Publications, commentaires et réactions</li>
+          <li>Signalements effectués ou reçus</li>
         </ul>
 
-        <h3>2.4 Données techniques</h3>
+        <h3>2.5 Rendez-vous avec les professionnels</h3>
         <ul>
-          <li>Type d&apos;appareil et système d&apos;exploitation</li>
-          <li>Version de l&apos;application</li>
-          <li>Données d&apos;utilisation anonymisées pour améliorer le service</li>
+          <li>Demandes de rendez-vous, créneaux et mode de consultation (en ligne ou en personne)</li>
+          <li>Informations que vous choisissez de communiquer au professionnel</li>
+          <li>Avis laissé après une consultation</li>
+        </ul>
+
+        <h3>2.6 Données techniques et de sécurité</h3>
+        <ul>
+          <li>Type d&apos;appareil ou de navigateur, système d&apos;exploitation et version de l&apos;application</li>
+          <li>Identifiant d&apos;appareil, adresse IP de connexion et dates de connexion</li>
+          <li>Jeton de notification, nécessaire à l&apos;envoi des notifications</li>
+          <li>Journaux techniques et indicateurs de sécurité, comme les tentatives de connexion échouées ou les signalements d&apos;abus</li>
+        </ul>
+
+        <h3>2.7 Préférences</h3>
+        <ul>
+          <li>Heure du rappel quotidien, notifications, thème et taille du texte</li>
         </ul>
 
         <div className="bg-[#F5EFED] p-4 rounded-xl my-4">
-          <p className="text-sm font-semibold text-[#77021D] mb-2">🔒 Ce que nous NE collectons PAS :</p>
+          <p className="text-sm font-semibold text-[#77021D] mb-2">Ce que nous ne collectons pas</p>
           <ul className="text-sm mb-0">
-            <li>Nom et prénom réels</li>
-            <li>Adresse postale précise</li>
-            <li>Données bancaires (les paiements sont gérés par des prestataires tiers sécurisés)</li>
-            <li>Contenu des messages privés (nous n&apos;avons pas de messagerie privée)</li>
+            <li>Votre nom et prénom réels</li>
+            <li>Votre adresse postale</li>
+            <li>Vos coordonnées bancaires</li>
+            <li>Votre position géographique précise</li>
+            <li>Vos contacts, votre micro ou votre caméra</li>
+            <li>Des messages privés, car l&apos;application n&apos;en propose pas</li>
           </ul>
         </div>
 
-        <h2>3. Comment utilisons-nous vos données ?</h2>
-        <p>Nous utilisons vos données personnelles uniquement pour :</p>
-        <ul>
-          <li><strong>Fournir le service</strong> : permettre le fonctionnement de l&apos;application, le suivi d&apos;humeur, les recommandations personnalisées</li>
-          <li><strong>Améliorer l&apos;expérience</strong> : personnaliser les défis, adapter les suggestions de bien-être</li>
-          <li><strong>Analyser et optimiser</strong> : comprendre comment l&apos;application est utilisée pour l&apos;améliorer</li>
-          <li><strong>Assurer la sécurité</strong> : détecter et prévenir les comportements abusifs ou frauduleux</li>
-          <li><strong>Communiquer</strong> : vous envoyer des notifications importantes (rarement, uniquement liées au service)</li>
-        </ul>
+        <h2>3. Pourquoi utilisons-nous vos données, et sur quelle base ?</h2>
 
-        <h2>4. Base légale du traitement</h2>
-        <p>Conformément au RGPD, nous traitons vos données sur les bases légales suivantes :</p>
-        <ul>
-          <li><strong>Exécution du contrat</strong> : utilisation des fonctionnalités de l&apos;application (suivi d&apos;humeur, assistant IA)</li>
-          <li><strong>Consentement</strong> : pour certaines fonctionnalités optionnelles (notifications, partage de données anonymes pour la recherche)</li>
-          <li><strong>Intérêt légitime</strong> : pour améliorer nos services, analyser l&apos;utilisation, et assurer la sécurité</li>
-          <li><strong>Obligation légale</strong> : pour répondre aux autorités judiciaires si requis</li>
-        </ul>
-
-        <h2>5. Combien de temps conservons-nous vos données ?</h2>
-        
         <div className="overflow-x-auto my-4">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-[#F5EFED]">
-                <th className="border border-[#EDE5E3] p-2 text-left">Type de données</th>
-                <th className="border border-[#EDE5E3] p-2 text-left">Durée de conservation</th>
+                <th className="border border-[#EDE5E3] p-2 text-left">Finalité</th>
+                <th className="border border-[#EDE5E3] p-2 text-left">Base légale</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-[#EDE5E3] p-2">Données de compte</td>
-                <td className="border border-[#EDE5E3] p-2">Jusqu&apos;à suppression du compte + 30 jours</td>
+                <td className="border border-[#EDE5E3] p-2">Créer et gérer votre compte, faire fonctionner l&apos;application</td>
+                <td className="border border-[#EDE5E3] p-2">Exécution du contrat (les CGU)</td>
               </tr>
               <tr className="bg-[#FAF7F5]">
-                <td className="border border-[#EDE5E3] p-2">Données d&apos;humeur et activité</td>
-                <td className="border border-[#EDE5E3] p-2">Pendant toute la durée d&apos;utilisation active</td>
+                <td className="border border-[#EDE5E3] p-2">Traiter vos données de bien-être (humeur, stress, notes, objectifs)</td>
+                <td className="border border-[#EDE5E3] p-2">Votre consentement explicite</td>
               </tr>
               <tr>
-                <td className="border border-[#EDE5E3] p-2">Publications communautaires</td>
-                <td className="border border-[#EDE5E3] p-2">Anonymisées après suppression du compte</td>
+                <td className="border border-[#EDE5E3] p-2">Transmettre une alerte quand vous utilisez « Besoin d&apos;aide maintenant »</td>
+                <td className="border border-[#EDE5E3] p-2">Votre demande volontaire, qui vaut consentement</td>
               </tr>
               <tr className="bg-[#FAF7F5]">
-                <td className="border border-[#EDE5E3] p-2">Données anonymisées</td>
-                <td className="border border-[#EDE5E3] p-2">Conservées indéfiniment à des fins statistiques</td>
+                <td className="border border-[#EDE5E3] p-2">Personnaliser les défis et les rappels</td>
+                <td className="border border-[#EDE5E3] p-2">Exécution du contrat et votre consentement</td>
+              </tr>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Envoyer des notifications</td>
+                <td className="border border-[#EDE5E3] p-2">Votre autorisation, donnée dans votre appareil ou navigateur</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Vous mettre en relation avec un professionnel</td>
+                <td className="border border-[#EDE5E3] p-2">Votre demande et l&apos;exécution du contrat</td>
+              </tr>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Assurer la sécurité, prévenir les abus et modérer la communauté</td>
+                <td className="border border-[#EDE5E3] p-2">Notre intérêt légitime à protéger les utilisateurs et la plateforme</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Répondre à une demande des autorités</td>
+                <td className="border border-[#EDE5E3] p-2">Obligation légale</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h2>6. Partageons-nous vos données ?</h2>
-        <p>Nous ne vendons jamais vos données personnelles. Nous pouvons partager vos données uniquement dans les cas suivants :</p>
-        <ul>
-          <li><strong>Prestataires techniques</strong> : hébergement (OVH, AWS, etc.), envoi d&apos;emails, analyse de données (tous signataires d&apos;accords de confidentialité)</li>
-          <li><strong>Professionnels partenaires</strong> : uniquement si vous demandez explicitement une mise en relation (avec votre consentement)</li>
-          <li><strong>Obligation légale</strong> : pour répondre à une injonction judiciaire ou administrative</li>
-          <li><strong>Protection des droits</strong> : pour faire respecter nos CGU ou protéger la sécurité de nos utilisateurs</li>
-        </ul>
+        <p>
+          En créant votre compte puis en renseignant votre humeur, vous consentez expressément au traitement de vos données de bien-être. Vous pouvez retirer ce consentement à tout moment en supprimant les données concernées ou votre compte, sans que cela remette en cause ce qui a été fait auparavant.
+        </p>
+        <p>
+          Nous ne vendons pas vos données et nous ne les utilisons pas à des fins publicitaires. Elles ne sont jamais transmises à des assureurs ni à des employeurs.
+        </p>
 
+        <h2>4. Personnalisation et mesures automatiques</h2>
+        <ul>
+          <li>Les défis proposés s&apos;adaptent à votre humeur et à votre historique.</li>
+          <li>Certains rappels et notifications tiennent compte de vos habitudes, par exemple une invitation à faire un défi après des journées difficiles.</li>
+          <li>Des mesures de sécurité automatiques peuvent limiter temporairement un compte en cas d&apos;activité anormale, comme des tentatives de connexion répétées ou du spam.</li>
+        </ul>
+        <p>
+          Ces mécanismes n&apos;établissent aucun diagnostic et ne produisent aucun effet juridique. Si votre compte est restreint, vous pouvez demander à un membre de l&apos;équipe de réexaminer la situation en écrivant à support@basyam.com.
+        </p>
+
+        <h2>5. Communauté et anonymat</h2>
+        <p>
+          Les autres membres, ainsi que les professionnels qui participent à la communauté, voient uniquement votre pseudo et le contenu que vous publiez. Votre email et les informations de votre compte ne sont jamais affichés.
+        </p>
+        <p>
+          Les personnes habilitées de l&apos;équipe peuvent consulter les contenus signalés pour assurer la modération, ainsi que les données de compte nécessaires au support et à la sécurité. Cet accès est limité à ces besoins.
+        </p>
+        <p>
+          Évitez de publier des informations qui permettraient de vous identifier ou d&apos;identifier un tiers, car un texte libre peut contenir de telles informations. Lorsque vous supprimez votre compte, vos publications sont anonymisées, c&apos;est-à-dire détachées de votre compte. Vous pouvez aussi les supprimer vous-même avant.
+        </p>
+
+        <h2>6. Rendez-vous avec un professionnel</h2>
+        <p>
+          Lorsque vous demandez un rendez-vous, nous transmettons au professionnel les informations nécessaires à la consultation, ainsi que celles que vous choisissez de lui communiquer. Le professionnel est responsable de son propre suivi et soumis aux obligations de confidentialité de sa profession.
+        </p>
+        <p>
+          Les consultations en ligne peuvent passer par un outil de visioconférence choisi par le professionnel. La politique de confidentialité de cet outil s&apos;applique alors à la séance.
+        </p>
+
+        <h2>7. Avec qui partageons-nous vos données ?</h2>
+        <ul>
+          <li>Nos prestataires techniques, qui agissent sur nos instructions et sont tenus à la confidentialité : hébergement et base de données, envoi d&apos;emails, stockage d&apos;images, et notifications via Firebase Cloud Messaging de Google.</li>
+          <li>Le professionnel que vous avez choisi, dans les conditions décrites à la section 6.</li>
+          <li>Les autorités, lorsque la loi nous y oblige.</li>
+          <li>Toute personne concernée, lorsque cela est nécessaire pour protéger nos droits ou la sécurité des utilisateurs.</li>
+        </ul>
         <div className="bg-[#5B8FC4]/10 border-l-4 border-[#5B8FC4] p-4 rounded-r-xl my-4">
           <p className="text-sm">
-            <span className="font-semibold">🌍 Transferts internationaux :</span> Vos données sont hébergées au Burkina Faso et en France (UE), garantissant un niveau de protection conforme au RGPD.
+            Certains prestataires peuvent traiter des données en dehors du pays où vous vivez. Nous veillons à ce que ces transferts soient encadrés par des garanties appropriées, conformes à la loi applicable.
           </p>
         </div>
 
-        <h2>7. Quels sont vos droits ?</h2>
-        <p>Conformément au RGPD et à la loi burkinabè sur la protection des données, vous disposez des droits suivants :</p>
-        
-        <div className="grid gap-3 my-4">
-          <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">
-            <span className="text-xl">📖</span>
-            <div>
-              <div className="font-semibold">Droit d&apos;accès</div>
-              <div className="text-sm text-[#8A7070]">Obtenir une copie de toutes vos données personnelles</div>
-            </div>
-          </div>
-          <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">
-            <span className="text-xl">✏️</span>
-            <div>
-              <div className="font-semibold">Droit de rectification</div>
-              <div className="text-sm text-[#8A7070]">Modifier vos informations inexactes</div>
-            </div>
-          </div>
-          <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">
-            <span className="text-xl">🗑️</span>
-            <div>
-              <div className="font-semibold">Droit à l&apos;effacement (droit à l&apos;oubli)</div>
-              <div className="text-sm text-[#8A7070]">
-                Supprimer votre compte et vos données — directement dans l&apos;app (Réglages) ou,
-                sans l&apos;app,{" "}
-                <Link href="/legal/account-deletion" className="text-[#77021D] font-semibold underline">
-                  via cette page
-                </Link>
-                .
-              </div>
-            </div>
-          </div>
-          <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">
-            <span className="text-xl">📦</span>
-            <div>
-              <div className="font-semibold">Droit à la portabilité</div>
-              <div className="text-sm text-[#8A7070]">Récupérer vos données au format JSON</div>
-            </div>
-          </div>
-          <div className="bg-[#FAF7F5] rounded-xl p-3 flex items-start gap-3">
-            <span className="text-xl">⏸️</span>
-            <div>
-              <div className="font-semibold">Droit d&apos;opposition et limitation</div>
-              <div className="text-sm text-[#8A7070]">Vous opposer à certains traitements de données</div>
-            </div>
-          </div>
+        <h2>8. Combien de temps conservons-nous vos données ?</h2>
+
+        <div className="overflow-x-auto my-4">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="bg-[#F5EFED]">
+                <th className="border border-[#EDE5E3] p-2 text-left">Données</th>
+                <th className="border border-[#EDE5E3] p-2 text-left">Durée de conservation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Compte et profil</td>
+                <td className="border border-[#EDE5E3] p-2">Durée du compte, puis suppression dans les 30 jours qui suivent votre demande</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Données de bien-être, défis, points et badges</td>
+                <td className="border border-[#EDE5E3] p-2">Durée du compte, puis suppression dans les 30 jours qui suivent la suppression du compte</td>
+              </tr>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Alertes « Besoin d&apos;aide maintenant »</td>
+                <td className="border border-[#EDE5E3] p-2">12 mois au maximum, puis suppression</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Publications communautaires</td>
+                <td className="border border-[#EDE5E3] p-2">Anonymisées lors de la suppression du compte</td>
+              </tr>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Rendez-vous</td>
+                <td className="border border-[#EDE5E3] p-2">Le temps nécessaire à la gestion du rendez-vous et au suivi de votre compte. Le professionnel conserve son propre dossier selon ses obligations.</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Journaux techniques et adresses IP</td>
+                <td className="border border-[#EDE5E3] p-2">12 mois au maximum</td>
+              </tr>
+              <tr>
+                <td className="border border-[#EDE5E3] p-2">Compte inactif</td>
+                <td className="border border-[#EDE5E3] p-2">Un compte inactif depuis plus de 24 mois peut être supprimé, après un préavis par email</td>
+              </tr>
+              <tr className="bg-[#FAF7F5]">
+                <td className="border border-[#EDE5E3] p-2">Statistiques anonymisées</td>
+                <td className="border border-[#EDE5E3] p-2">Sans limite de durée, car elles ne permettent plus de vous identifier</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
         <p>
-          Pour exercer ces droits, rendez-vous dans votre <strong>Profil &gt; Paramètres &gt; Mes données</strong> dans l&apos;application, ou contactez-nous à <strong>support@basyam.com</strong>.
+          Les copies de sauvegarde sont renouvelées régulièrement. Une donnée supprimée peut donc subsister quelque temps dans une sauvegarde avant d&apos;être définitivement effacée.
         </p>
 
-        <h2>8. Sécurité des données</h2>
-        <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles :</p>
+        <h2>9. Quels sont vos droits ?</h2>
+        <p>Conformément à la loi burkinabè sur la protection des données personnelles et, lorsqu&apos;il s&apos;applique, au RGPD, vous disposez des droits suivants.</p>
         <ul>
-          <li><strong>Chiffrement</strong> : tous les mots de passe sont hachés (bcrypt)</li>
-          <li><strong>HTTPS/TLS</strong> : toutes les communications sont chiffrées</li>
-          <li><strong>Authentification</strong> : code de vérification par email/SMS</li>
-          <li><strong>Accès restreint</strong> : seuls les membres autorisés de l&apos;équipe accèdent aux données</li>
-          <li><strong>Audits réguliers</strong> : nous vérifions régulièrement nos pratiques de sécurité</li>
-        </ul>
-
-        <h2>9. Cookies et technologies similaires</h2>
-        <p>
-          L&apos;application mobile BASYAM utilise très peu de cookies. Nous utilisons uniquement :
-        </p>
-        <ul>
-          <li><strong>Cookies essentiels</strong> : pour maintenir votre session de connexion</li>
-          <li><strong>Préférences</strong> : pour mémoriser vos paramètres (thème, notifications)</li>
-          <li><strong>Analytiques anonymes</strong> : pour comprendre comment l&apos;application est utilisée (opt-out possible)</li>
+          <li>Le droit d&apos;accéder à vos données et d&apos;en obtenir une copie.</li>
+          <li>Le droit de corriger les informations inexactes.</li>
+          <li>
+            Le droit à l&apos;effacement : vous pouvez supprimer votre compte et vos données directement dans l&apos;application, dans les réglages, ou, si vous n&apos;y avez plus accès,{" "}
+            <Link href="/legal/account-deletion" className="text-[#77021D] font-semibold underline">
+              via cette page
+            </Link>
+            .
+          </li>
+          <li>Le droit à la portabilité : vous pouvez récupérer vos données dans un format structuré (JSON).</li>
+          <li>Le droit de vous opposer à certains traitements ou d&apos;en demander la limitation.</li>
+          <li>Le droit de retirer votre consentement à tout moment.</li>
         </ul>
         <p>
-          Vous pouvez gérer vos préférences de cookies dans les paramètres de votre appareil.
+          Pour exercer ces droits, rendez-vous dans <strong>Profil, Paramètres, puis Mes données</strong>, ou écrivez à <strong>support@basyam.com</strong> depuis l&apos;adresse de votre compte. Nous répondons dans un délai d&apos;un mois. Pour protéger votre compte, nous pouvons vous demander de confirmer votre identité.
         </p>
-
-        <h2>10. Mineurs</h2>
         <p>
-          BASYAM est destiné aux personnes âgées d&apos;au moins 18 ans. Nous ne collectons pas sciemment les données de mineurs de moins de 18 ans. Si nous apprenons qu&apos;un utilisateur a moins de 18 ans, nous supprimons immédiatement son compte et ses données.
+          Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la Commission de l&apos;informatique et des libertés (CIL) du Burkina Faso, ou l&apos;autorité de protection des données de votre pays de résidence.
         </p>
 
-        <h2>11. Modifications de cette politique</h2>
+        <h2>10. Comment protégeons-nous vos données ?</h2>
+        <ul>
+          <li>Les échanges entre l&apos;application et nos serveurs sont chiffrés (HTTPS).</li>
+          <li>Les mots de passe sont hachés et vos notes d&apos;humeur sont chiffrées.</li>
+          <li>L&apos;accès aux données est limité aux personnes habilitées.</li>
+          <li>Un code de vérification est envoyé par email à la création du compte.</li>
+          <li>Les tentatives de connexion répétées entraînent un verrouillage temporaire, et une nouvelle connexion sur un autre appareil déconnecte l&apos;ancien.</li>
+        </ul>
         <p>
-          Nous pouvons mettre à jour cette politique de confidentialité. Toute modification substantielle vous sera notifiée via l&apos;application (notification push ou email). La poursuite de l&apos;utilisation de BASYAM après notification vaut acceptation des nouvelles conditions.
+          En cas de violation de données présentant un risque pour vous, nous vous en informons, ainsi que l&apos;autorité compétente, dans les délais prévus par la loi.
         </p>
 
-        <h2>12. Nous contacter</h2>
+        <h2>11. Stockage sur votre appareil et notifications</h2>
+        <p>
+          L&apos;application mobile et la version web enregistrent sur votre appareil uniquement des données nécessaires à leur fonctionnement : votre jeton de connexion, vos préférences et un cache. Nous n&apos;utilisons ni cookies publicitaires ni outil de mesure d&apos;audience tiers.
+        </p>
+        <p>
+          Les notifications ne sont envoyées qu&apos;avec votre autorisation. Vous pouvez les désactiver à tout moment dans les réglages de l&apos;application, de votre appareil ou de votre navigateur.
+        </p>
+
+        <h2>12. Mineurs</h2>
+        <p>
+          BASYAM est réservé aux personnes âgées d&apos;au moins 18 ans, ce que vous déclarez à l&apos;inscription. Si nous apprenons qu&apos;un utilisateur est mineur, nous suspendons son compte puis le supprimons avec ses données. Si vous pensez qu&apos;un mineur utilise BASYAM, écrivez-nous à support@basyam.com.
+        </p>
+
+        <h2>13. Modifications de cette politique</h2>
+        <p>
+          Nous pouvons mettre à jour cette politique. La date et la version figurent en haut de cette page. Toute modification importante vous est signalée dans l&apos;application ou par email. Si vous continuez à utiliser BASYAM après cette information, les nouvelles conditions s&apos;appliquent.
+        </p>
+
+        <h2>14. Nous contacter</h2>
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4">
           <p className="font-semibold mb-2">Pour toute question relative à vos données personnelles :</p>
-          <p className="mb-1">📧 <a href="mailto:support@basyam.com" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">support@basyam.com</a></p>
-          <p className="text-sm text-[#8A7070]">📮 Ou via notre formulaire de contact dans l&apos;application</p>
+          <p className="mb-1"><a href="mailto:support@basyam.com" className="text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors">support@basyam.com</a></p>
+          <p className="text-sm text-[#8A7070]">Indiquez « Données personnelles » dans l&apos;objet de votre message.</p>
         </div>
 
         <div className="text-center text-sm text-[#8A7070] pt-8 border-t border-[#EDE5E3]">
-          <p>Dernière mise à jour : Mai 2026</p>
+          <p>Dernière mise à jour : Octobre 2026 · Version 2026-10</p>
         </div>
       </div>
 

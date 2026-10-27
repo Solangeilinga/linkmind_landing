@@ -13,12 +13,12 @@ export default function TermsPage() {
             Document légal
           </span>
         </div>
-        
+
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#1C1010] mb-3 animate-fadeUp">
           Conditions Générales d&apos;Utilisation
         </h1>
         <p className="text-[#8A7070] text-sm animate-fadeUp delay-200">
-          Dernière mise à jour : Mai 2026 · Version 2025-01
+          Dernière mise à jour : Septembre 2026 · Version 2026-09
         </p>
       </div>
 
@@ -29,12 +29,12 @@ export default function TermsPage() {
             <span className="text-white text-sm font-bold">CGU</span>
           </div>
           <div>
-            <div className="font-semibold text-[#1C1010]">Version 2025-01</div>
-            <div className="text-xs text-[#8A7070]">En vigueur depuis Mai 2026</div>
+            <div className="font-semibold text-[#1C1010]">Version 2026-09</div>
+            <div className="text-xs text-[#8A7070]">En vigueur depuis Septembre 2026</div>
           </div>
         </div>
-        <Link 
-          href="/legal/privacy" 
+        <Link
+          href="/legal/privacy"
           className="text-sm text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors"
         >
           Voir aussi notre politique de confidentialité →
@@ -82,21 +82,21 @@ export default function TermsPage() {
 
         <h2>Préambule</h2>
         <p>
-          Les présentes Conditions Générales d&apos;Utilisation (ci-après &quot;CGU&quot;) régissent l&apos;accès et l&apos;utilisation de l&apos;application mobile BASYAM (ci-après &quot;l&apos;Application&quot;), développée et exploitée par l&apos;équipe BASYAM (ci-après &quot;Nous&quot; ou &quot;BASYAM&quot;).
+          Les présentes Conditions Générales d&apos;Utilisation (ci-après les &quot;CGU&quot;) régissent l&apos;accès et l&apos;utilisation de l&apos;application mobile BASYAM (ci-après l&apos;&quot;Application&quot;), développée et exploitée par l&apos;équipe BASYAM (ci-après &quot;Nous&quot; ou &quot;BASYAM&quot;).
         </p>
         <p>
           En créant un compte et en utilisant l&apos;Application, vous reconnaissez avoir lu, compris et accepté sans réserve les présentes CGU. Si vous n&apos;acceptez pas ces conditions, vous ne devez pas utiliser l&apos;Application.
         </p>
 
-        <h2>Article 1 — Objet</h2>
+        <h2>Article 1 : Objet</h2>
         <p>
-          BASYAM est une application mobile de bien-être mental destinée aux jeunes âgés de 18 ans et plus. Elle propose des outils de suivi d&apos;humeur, un assistant conversationnel basé sur l&apos;intelligence artificielle, des défis de bien-être, une communauté d&apos;entraide anonyme, et un accès à des professionnels de santé mentale partenaires.
+          BASYAM est une application mobile de bien-être mental destinée aux jeunes âgés de 18 ans et plus. Elle propose un suivi quotidien de l&apos;humeur, des défis de bien-être, une communauté d&apos;entraide anonyme et un accès à des professionnels de santé mentale partenaires.
         </p>
         <p className="bg-[#F5EFED] p-4 rounded-xl italic">
           BASYAM est un outil de soutien au bien-être et ne constitue en aucun cas un service médical, un dispositif de diagnostic, ni un substitut à une consultation professionnelle.
         </p>
 
-        <h2>Article 2 — Conditions d&apos;accès</h2>
+        <h2>Article 2 : Conditions d&apos;accès</h2>
         <h3>2.1 Âge minimum</h3>
         <p>
           L&apos;utilisation de BASYAM est réservée aux personnes âgées d&apos;au moins 18 ans. En créant un compte, vous certifiez avoir atteint cet âge. BASYAM se réserve le droit de suspendre tout compte dont l&apos;utilisateur s&apos;avèrerait être mineur en dessous de cet âge, sans préavis.
@@ -117,7 +117,7 @@ export default function TermsPage() {
           Un code de vérification est envoyé par email ou SMS lors de la création du compte. La validation de ce code est obligatoire pour accéder à l&apos;ensemble des fonctionnalités de l&apos;Application.
         </p>
 
-        <h2>Article 3 — Description des services</h2>
+        <h2>Article 3 : Description des services</h2>
         <h3>3.1 Suivi d&apos;humeur</h3>
         <p>
           L&apos;Application permet à l&apos;utilisateur d&apos;enregistrer son état émotionnel quotidiennement, de visualiser son évolution sur plusieurs jours et d&apos;accéder à des recommandations personnalisées basées sur ses données.
@@ -139,54 +139,39 @@ export default function TermsPage() {
         </p>
 
         <p className="bg-[#F5EFED] p-4 rounded-xl italic">
-          BASYAM est actuellement 100% gratuite, sans fonctionnalité payante.
+          BASYAM est actuellement une application entièrement gratuite, sans fonctionnalité payante.
         </p>
 
-        <h2>Article 4 — Règles de conduite et contenu interdit</h2>
+        <h2>Article 4 : Règles de conduite et contenu interdit</h2>
         <p>En utilisant l&apos;Application, et notamment la fonctionnalité communautaire, vous vous engagez à respecter les règles suivantes.</p>
 
         <h3>4.1 Contenus interdits</h3>
-        <p>Il est strictement interdit de publier, diffuser ou partager tout contenu qui :</p>
-        <ul>
-          <li>incite à la haine, à la discrimination ou à la violence fondées sur l&apos;origine, le sexe, la religion, l&apos;orientation sexuelle, le handicap ou toute autre caractéristique personnelle ;</li>
-          <li>constitue du harcèlement, de l&apos;intimidation ou des menaces envers un autre utilisateur ;</li>
-          <li>fait l&apos;apologie du suicide, de l&apos;automutilation ou de tout comportement dangereux pour soi ou pour autrui ;</li>
-          <li>contient des informations personnelles identifiables sur des tiers sans leur consentement ;</li>
-          <li>diffuse des contenus à caractère sexuel explicite ou violent ;</li>
-          <li>constitue de la publicité, du spam ou de la sollicitation commerciale non autorisée ;</li>
-          <li>porte atteinte aux droits de propriété intellectuelle de tiers.</li>
-        </ul>
+        <p>Il est strictement interdit de publier, diffuser ou partager tout contenu qui incite à la haine, à la discrimination ou à la violence, qui constitue du harcèlement ou des menaces envers un autre utilisateur, qui fait l&apos;apologie du suicide, de l&apos;automutilation ou de tout comportement dangereux, qui contient des informations personnelles identifiables sur des tiers sans leur consentement, qui présente un caractère sexuel explicite ou violent, qui relève de la publicité ou de la sollicitation commerciale non autorisée, ou qui porte atteinte aux droits de propriété intellectuelle de tiers.</p>
 
         <h3>4.2 Comportements interdits</h3>
-        <p>Il est également interdit de :</p>
-        <ul>
-          <li>tenter de contourner les mécanismes d&apos;anonymat pour identifier d&apos;autres utilisateurs ;</li>
-          <li>utiliser l&apos;Application à des fins de collecte de données sur d&apos;autres utilisateurs ;</li>
-          <li>usurper l&apos;identité d&apos;un autre utilisateur, d&apos;un professionnel ou d&apos;un membre de l&apos;équipe BASYAM ;</li>
-          <li>tenter d&apos;accéder de façon non autorisée aux systèmes informatiques de l&apos;Application.</li>
-        </ul>
+        <p>Il est également interdit de tenter de contourner les mécanismes d&apos;anonymat pour identifier d&apos;autres utilisateurs, d&apos;utiliser l&apos;Application à des fins de collecte de données sur d&apos;autres utilisateurs, d&apos;usurper l&apos;identité d&apos;un autre utilisateur, d&apos;un professionnel ou d&apos;un membre de l&apos;équipe BASYAM, ou de tenter d&apos;accéder de façon non autorisée aux systèmes informatiques de l&apos;Application.</p>
 
         <h3>4.3 Modération</h3>
         <p>
           BASYAM se réserve le droit de supprimer tout contenu contrevenant aux présentes règles et de suspendre ou clôturer tout compte dont le comportement serait incompatible avec les valeurs de bienveillance et de respect qui fondent la communauté BASYAM, sans préavis ni indemnité.
         </p>
 
-        <h2>Article 5 — Avertissement médical et limites de l&apos;Application</h2>
+        <h2>Article 5 : Avertissement médical et limites de l&apos;Application</h2>
         <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl my-4">
-          <p className="text-red-700 font-semibold mb-1">⚠️ Attention</p>
+          <p className="text-red-700 font-semibold mb-1">Attention</p>
           <p className="text-red-600 text-sm">
-            BASYAM n&apos;est PAS un service médical d&apos;urgence.
+            BASYAM n&apos;est pas un service médical d&apos;urgence.
           </p>
         </div>
-        
+
         <h3>5.1 Pas un service médical</h3>
         <p>
-          BASYAM est un outil de soutien au bien-être général. L&apos;Application, ses contenus, son assistant IA et les informations qu&apos;elle fournit ne constituent en aucun cas un diagnostic médical, un traitement psychiatrique, ni un avis psychologique professionnel.
+          BASYAM est un outil de soutien au bien-être général. L&apos;Application, ses contenus et les informations qu&apos;elle fournit ne constituent en aucun cas un diagnostic médical, un traitement psychiatrique, ni un avis psychologique professionnel.
         </p>
 
         <h3>5.2 Situations d&apos;urgence</h3>
         <p>
-          Si vous êtes en situation de détresse grave, de crise suicidaire ou si votre vie ou celle d&apos;autrui est en danger, ne vous fiez pas à l&apos;Application. Contactez immédiatement les services d&apos;urgence de votre pays :
+          Si vous êtes en situation de détresse grave, de crise suicidaire ou si votre vie ou celle d&apos;autrui est en danger, ne vous fiez pas à l&apos;Application. Contactez immédiatement les services d&apos;urgence de votre pays.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-4">
           <div className="bg-[#77021D]/10 rounded-xl p-3 text-center">
@@ -208,10 +193,10 @@ export default function TermsPage() {
           BASYAM encourage fortement ses utilisateurs à consulter un professionnel de santé mentale qualifié pour toute préoccupation sérieuse concernant leur santé psychologique.
         </p>
 
-        <h2>Article 6 — Données personnelles et confidentialité</h2>
+        <h2>Article 6 : Données personnelles et confidentialité</h2>
         <h3>6.1 Collecte des données</h3>
         <p>
-          BASYAM collecte les données nécessaires au fonctionnement de l&apos;Application, notamment les informations de compte (email, téléphone, âge, ville), les données d&apos;humeur, les interactions avec l&apos;assistant, et les contenus publiés dans la communauté.
+          BASYAM collecte les données nécessaires au fonctionnement de l&apos;Application, notamment les informations de compte (email, téléphone, âge, ville), les données d&apos;humeur et les contenus publiés dans la communauté.
         </p>
 
         <h3>6.2 Anonymat dans la communauté</h3>
@@ -221,28 +206,28 @@ export default function TermsPage() {
 
         <h3>6.3 Droits des utilisateurs</h3>
         <p>
-          Conformément aux principes du Règlement Général sur la Protection des Données (RGPD) et aux lois locales applicables, vous disposez d&apos;un droit d&apos;accès, de rectification, de portabilité et de suppression de vos données personnelles. Vous pouvez exercer ces droits directement depuis votre profil dans l&apos;Application (export JSON, suppression de compte).
+          Conformément aux principes du Règlement Général sur la Protection des Données (RGPD) et aux lois locales applicables, vous disposez d&apos;un droit d&apos;accès, de rectification, de portabilité et de suppression de vos données personnelles. Vous pouvez exercer ces droits directement depuis votre profil dans l&apos;Application, par export JSON ou par suppression de compte.
         </p>
 
         <h3>6.4 Conservation des données</h3>
         <p>
-          Vos données sont conservées pendant toute la durée de votre utilisation de l&apos;Application et pendant une période de 30 jours suivant la suppression de votre compte, à l&apos;exception des données rendues anonymes dans le cadre de la suppression de compte.
+          Vos données sont conservées pendant toute la durée de votre utilisation de l&apos;Application, puis pendant une période de 30 jours suivant la suppression de votre compte, à l&apos;exception des données rendues anonymes dans le cadre de cette suppression.
         </p>
 
         <h3>6.5 Sécurité</h3>
         <p>
-          BASYAM met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, toute divulgation, modification ou destruction. Les mots de passe sont chiffrés et les communications sont sécurisées par protocole HTTPS.
+          BASYAM met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, toute divulgation, modification ou destruction. Les mots de passe sont chiffrés et les communications sont sécurisées par le protocole HTTPS.
         </p>
 
-        <h2>Article 7 — Propriété intellectuelle</h2>
+        <h2>Article 7 : Propriété intellectuelle</h2>
         <p>
-          L&apos;ensemble des éléments constituant l&apos;Application — design, textes, illustrations, logos, code source, architecture et contenus générés par BASYAM — sont la propriété exclusive de BASYAM et sont protégés par les lois applicables en matière de propriété intellectuelle.
+          Le design, les textes, les illustrations, les logos, le code source et l&apos;architecture de l&apos;Application sont la propriété exclusive de BASYAM et sont protégés par les lois applicables en matière de propriété intellectuelle.
         </p>
         <p>
           Toute reproduction, représentation, modification ou exploitation non autorisée de ces éléments est strictement interdite. Les contenus publiés par les utilisateurs dans la communauté restent leur propriété. En les publiant, l&apos;utilisateur accorde à BASYAM une licence non exclusive d&apos;utilisation à des fins de fonctionnement et d&apos;amélioration de l&apos;Application.
         </p>
 
-        <h2>Article 8 — Disponibilité et modifications du service</h2>
+        <h2>Article 8 : Disponibilité et modifications du service</h2>
         <h3>8.1 Disponibilité</h3>
         <p>
           BASYAM s&apos;efforce d&apos;assurer la disponibilité permanente de l&apos;Application mais ne peut garantir une disponibilité sans interruption. Des maintenances, mises à jour ou incidents techniques peuvent temporairement rendre l&apos;Application inaccessible.
@@ -258,7 +243,7 @@ export default function TermsPage() {
           Les présentes CGU peuvent être modifiées à tout moment. Les utilisateurs seront informés de toute modification substantielle via l&apos;Application. La poursuite de l&apos;utilisation de l&apos;Application après notification vaut acceptation des nouvelles conditions.
         </p>
 
-        <h2>Article 9 — Résiliation</h2>
+        <h2>Article 9 : Résiliation</h2>
         <h3>9.1 Résiliation par l&apos;utilisateur</h3>
         <p>
           Vous pouvez supprimer votre compte à tout moment depuis votre profil dans l&apos;Application. La suppression entraîne l&apos;anonymisation de vos publications communautaires et la suppression de vos données personnelles dans les délais prévus à l&apos;article 6.4.
@@ -269,24 +254,24 @@ export default function TermsPage() {
           BASYAM se réserve le droit de suspendre ou supprimer tout compte en cas de violation des présentes CGU, d&apos;activité frauduleuse ou de comportement portant atteinte à l&apos;intégrité de la communauté, sans préavis ni indemnité.
         </p>
 
-        <h2>Article 10 — Limitation de responsabilité</h2>
+        <h2>Article 10 : Limitation de responsabilité</h2>
         <p>
-          Dans les limites permises par la loi applicable, BASYAM ne saurait être tenu responsable des dommages directs ou indirects résultant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser l&apos;Application, des informations fournies par l&apos;assistant IA, des interactions entre utilisateurs dans la communauté, ou des prestations des professionnels partenaires.
+          Dans les limites permises par la loi applicable, BASYAM ne saurait être tenu responsable des dommages directs ou indirects résultant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser l&apos;Application, des interactions entre utilisateurs dans la communauté, ou des prestations des professionnels partenaires.
         </p>
         <p>
           L&apos;utilisateur reconnaît utiliser l&apos;Application sous sa propre responsabilité et à ses risques.
         </p>
 
-        <h2>Article 11 — Droit applicable et juridiction</h2>
+        <h2>Article 11 : Droit applicable et juridiction</h2>
         <p>
           Les présentes CGU sont soumises au droit burkinabè. En cas de litige relatif à leur interprétation ou à leur exécution, les parties s&apos;engagent à rechercher une résolution amiable avant tout recours judiciaire. À défaut d&apos;accord amiable, le litige sera soumis aux juridictions compétentes de Ouagadougou, Burkina Faso.
         </p>
 
-        <h2>Article 12 — Contact</h2>
+        <h2>Article 12 : Contact</h2>
         <div className="bg-[#F5EFED] rounded-2xl p-6 my-4 text-center">
           <p className="font-semibold text-[#1C1010] mb-2">Pour toute question :</p>
-          <a 
-            href="mailto:support@basyam.com" 
+          <a
+            href="mailto:support@basyam.com"
             className="text-xl font-bold text-[#77021D] hover:text-[#E07B2A] transition-colors"
           >
             support@basyam.com
@@ -296,15 +281,15 @@ export default function TermsPage() {
         <hr />
 
         <div className="text-center text-sm text-[#8A7070] py-8">
-          <p>Dernière mise à jour : Mai 2026</p>
-          <p>Version : 2025-01</p>
+          <p>Dernière mise à jour : Septembre 2026</p>
+          <p>Version : 2026-09</p>
         </div>
       </div>
 
       {/* Bouton retour */}
       <div className="text-center mt-12 animate-fadeUp delay-800">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="inline-flex items-center gap-2 text-[#77021D] font-semibold hover:text-[#E07B2A] transition-colors"
         >
           ← Retour à l&apos;accueil
